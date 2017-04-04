@@ -9,6 +9,7 @@
 @import "mixins";
 @import "reset";
 @import "elements";
+@import "footer";
 
 
 //global
@@ -73,11 +74,12 @@ html {
   }
   .para-body {
     font-size: 16px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.4;
   }
 }
 //connect bucket
 .connect-hero {
   position: relative;
+  overflow: hidden;
 }

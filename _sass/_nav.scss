@@ -5,6 +5,13 @@ nav {
 	width: 100%;
 }
 
+.cw-logo {
+	width: 60px;
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+
 .overlay {
 	height: 100%;
 	width: 0;
@@ -46,17 +53,17 @@ nav {
 
 .overlay .closebtn {
 	position: absolute;
-  font-size: 40px;
   top: -10px;
-  right: 40px;
+  right: 1rem;
 	font-size: 70px;
 }
 
 .hamburger {
 	position: fixed;
 	z-index: 100;
-	top: 35px;
-	right: 3em;
+	top: 1.5rem;
+	right: 1rem;
+	z-index: 1000;
 	cursor: pointer;
 }
 

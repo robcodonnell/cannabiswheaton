@@ -10,9 +10,11 @@ $rubik: 'Rubik', sans-serif;
 .hero-sub {
   color: #fff;
   line-height: 1.4;
+  margin-bottom: 2rem;
 }
 
 .hero-text {
   @include hero-text;
   width: 90%;
+  z-index: 100;
 }
