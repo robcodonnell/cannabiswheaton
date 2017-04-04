@@ -1,0 +1,37 @@
+@mixin hero-text {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+
+@mixin button {
+ border: 1px solid;
+ padding: 1em 1em 1em 1em;
+}
+
+@mixin clearfix {
+ &:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+}
+
+@mixin wrapper {
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+@mixin bp($point) {
+  @if $point == desktop {
+    @media only screen and (min-width: 1200px) { @content; }
+  }
+  @else if $point == tablet {
+    @media only screen and (min-width: 760px) { @content; }
+  }
+  @else if $point == phone {
+    @media only screen and (min-width: 400px)  { @content; }
+  }
+}
