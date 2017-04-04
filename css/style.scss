@@ -7,15 +7,37 @@
 @import "borderbox";
 @import "nav";
 @import "mixins";
+@import "reset";
+@import "elements";
 
+
+//global
 html {
   font-family: $rubik;
+  body {
+    margin: 0;
+  }
 }
 
-//background video
+.text-center {
+  text-align: center;
+}
+
+//hero banner
 .bg-video {
   height: 100vh;
 	position: relative;
+
+  .video-text-overlay {
+    @include hero-text;
+    width: 90%;
+  }
+
+  .video-dots {
+    height: 100%;
+    background-image: url({{site.baseurl}}/img/black-medium-checks.png);
+    background-repeat: repeat;
+  }
 
   .fullscreen-bg {
     position: absolute;
@@ -35,4 +57,27 @@ html {
     	object-fit: cover;
     }
   }
+}
+
+//about bucket
+.text-section {
+  padding: 2rem 0;
+}
+
+.para-box {
+  padding: 1rem;
+  .para-header {
+    font-size: 42px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+  }
+  .para-body {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+}
+//connect bucket
+.connect-hero {
+  position: relative;
 }

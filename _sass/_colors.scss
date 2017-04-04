@@ -1,17 +1,17 @@
 $green: #a6c09a;
-$navy-blue: #2B3036;
-$grey-blue: #434549;
+$navy: #2B3036;
+$grey: #434549;
 
 .txt-green {
   color: $green;
 }
 
 .txt-navy {
-  color: $navy-blue;
+  color: $navy;
 }
 
 .txt-grey {
-  color: $grey-blue;
+  color: $grey;
 }
 
 .bg-green {
@@ -19,9 +19,9 @@ $grey-blue: #434549;
 }
 
 .bg-navy {
-  background-color: $navy-blue;
+  background-color: $navy;
 }
 
 .bg-grey {
-  background-color: $grey-blue;
+  background-color: $grey;
 }

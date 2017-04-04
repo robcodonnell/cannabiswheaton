@@ -1,0 +1,23 @@
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: $navy;
+  padding: 1rem;
+  display: block;
+  border: 1px solid $navy;
+  width: 50%;
+  transition: .2s all ease-in;
+  &:hover {
+    color: #fff;
+    background-color: $navy;
+  }
+}
+
+.img-flex {
+  width: 100%;
+}
+
+.img-oversize {
+  width: 200%;
+}
