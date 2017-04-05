@@ -24,6 +24,12 @@ html {
   text-align: center;
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 700px;
+}
+
 //hero banner
 .bg-video {
   height: 100vh;
@@ -71,6 +77,7 @@ html {
     font-size: 42px;
     font-weight: 100;
     margin-bottom: 1rem;
+    line-height: 1.1;
   }
   .para-body {
     font-size: 16px;
@@ -81,5 +88,9 @@ html {
 //connect bucket
 .connect-hero {
   position: relative;
-  overflow: hidden;
+}
+
+//about-page
+.about-hero {
+
 }
