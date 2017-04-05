@@ -8,13 +8,25 @@ $rubik: 'Rubik', sans-serif;
   font-weight: light;
   text-transform: uppercase;
   @include bp(tablet) {
-    font-size: 46px;
+    font-size: 52px;
+  }
+  @include bp(desktop) {
+    font-size: 68px;
   }
 }
 .hero-sub {
   color: #fff;
   line-height: 1.4;
   margin-bottom: 2rem;
+  @include bp(phone) {
+    font-size: 16px;
+  }
+  @include bp(tablet) {
+    font-size: 18px
+  }
+  @include bp(desktop) {
+    font-size: 22px;
+  }
 }
 
 .hero-text {
@@ -27,6 +39,10 @@ $rubik: 'Rubik', sans-serif;
   }
   @include bp(tablet) {
     padding: 0 4rem;
+  }
+  @include bp(desktop) {
+    padding: 0 10rem;
+    @include wrapper;
   }
 }
 

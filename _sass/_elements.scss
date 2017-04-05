@@ -5,7 +5,7 @@
   color: $navy;
   padding: 1rem;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   border: 1px solid $navy;
   width: 50%;
   transition: .2s all ease-in;
@@ -46,6 +46,10 @@
   width: 200%;
   transform: translateX(-25%);
   z-index: 1;
+  @include bp(desktop) {
+    width: 120%;
+    transform: translateX(-9%);
+  }
 }
 
 .hero-img {
@@ -56,6 +60,11 @@
   height: 130%;
   transform: translateX(-16%);
   @include bp(tablet) {
+    transform: translateX(0);
+  }
+  @include bp(desktop) {
+    height: auto;
+    width: 100vw;
     transform: translateX(0);
   }
 }
