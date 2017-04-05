@@ -1,0 +1,58 @@
+@import "colors";
+
+.team-name {
+  color: $green;
+  margin-bottom: .5em;
+}
+
+.team-title {
+  font-size: 80%;
+}
+
+.team-profiles {
+  padding: 1rem;
+  @include bp(phone) {
+    padding: 2rem;
+  }
+  @include bp(tablet) {
+    padding: 2rem 4rem 2rem 4rem;
+  }
+  .team-member {
+    @include bp(tablet) {
+      display: inline-block;
+    }
+    .team-photo {
+      margin-bottom: 1rem;
+      width: 100%;
+      @include bp(phone) {
+        width: 50%;
+        margin-right: 1rem;
+        float: left;
+      }
+      @include bp(tablet) {
+        width: 30%;
+      }
+    }
+    .team-name {
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .team-title {
+      font-style: italic;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .team-bio {
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      @include bp(phone) {
+        clear: both;
+      }
+      @include bp(tablet) {
+        clear: none;
+        width: 65%;
+        float: left;
+      }
+    }
+  }
+}
