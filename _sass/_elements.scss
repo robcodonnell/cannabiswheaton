@@ -24,11 +24,17 @@
   display: block;
   margin: 0 auto;
   border: 1px solid #fff;
-  width: 20%;
+  width: 50%;
   transition: .2s all ease-in;
   &:hover {
     color: $navy;
     background-color: #fff;
+  }
+  @include bp(phone) {
+    width: 40%;
+  }
+  @include bp(tablet) {
+    width: 20%;
   }
 }
 
@@ -47,6 +53,9 @@
 }
 
 .img-banner {
-  height: 100%;
-  transform: translateX(-36%);
+  height: 130%;
+  transform: translateX(-16%);
+  @include bp(tablet) {
+    transform: translateX(0);
+  }
 }

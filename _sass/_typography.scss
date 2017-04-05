@@ -7,6 +7,9 @@ $rubik: 'Rubik', sans-serif;
   margin-bottom: 1rem;
   font-weight: light;
   text-transform: uppercase;
+  @include bp(tablet) {
+    font-size: 46px;
+  }
 }
 .hero-sub {
   color: #fff;
@@ -22,6 +25,9 @@ $rubik: 'Rubik', sans-serif;
   @include bp(phone) {
     padding: 0 2rem;
   }
+  @include bp(tablet) {
+    padding: 0 4rem;
+  }
 }
 
 .text-huge-green {
@@ -29,6 +35,9 @@ $rubik: 'Rubik', sans-serif;
   color: $green;
   @include bp(phone) {
     padding: 0 2rem 2rem 2rem;
+  }
+  @include bp(tablet) {
+    padding-left: calc(50% + 2rem);
   }
   .header-huge {
     font-size: 80px;

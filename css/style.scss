@@ -45,7 +45,14 @@ html {
 
   .video-text-overlay {
     @include hero-text;
-    width: 90%;
+    width: 100%;
+    padding: 0 1rem;
+    @include bp(phone) {
+      padding: 0 2rem;
+    }
+    @include bp(tablet) {
+      padding: 0 4rem;
+    }
   }
 
   .video-dots {
@@ -85,12 +92,16 @@ html {
   @include bp(phone) {
     padding: 2rem;
   }
+  @include bp(tablet) {
+    padding: 2rem 4rem;
+  }
   .para-header {
     font-size: 36px;
     font-weight: 100;
     margin-bottom: 1rem;
     line-height: 1.1;
     @include bp(tablet) {
+      font-size: 40px;
       float: left;
       width: 50%;
       text-align: right;
@@ -129,6 +140,7 @@ html {
 //connect bucket
 .connect-hero {
   position: relative;
+  overflow: hidden;
 }
 
 //about-page
@@ -151,6 +163,9 @@ html {
   padding: 1rem;
   @include bp(phone) {
     padding: 2rem;
+  }
+  @include bp(tablet) {
+    padding: 4rem;
   }
   .team-member {
     .team-photo {

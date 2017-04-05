@@ -14,6 +14,9 @@ nav {
 	@include bp(phone) {
 		left: 2rem;
 	}
+	@include bp(tablet) {
+		left: 4rem;
+	}
 }
 
 .overlay {
@@ -30,13 +33,19 @@ nav {
 }
 
 .overlay-content {
-	padding-left: 2rem;
+	padding-left: 1rem;
 	position: relative;
 	top: 25%;
 	width: 100%;
 	text-align: left;
 	margin-top: 2em;
 	opacity: 1;
+	@include bp(phone) {
+		padding-left: 2rem;
+	}
+	@include bp(tablet) {
+		padding-left: 4rem;
+	}
 }
 
 .overlay a {
@@ -48,6 +57,9 @@ nav {
 	display: block;
 	transition: all 0.2s ease-in-out;
   font-family: $rubik;
+	@include bp(tablet) {
+		font-size: 86px;
+	}
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -71,6 +83,9 @@ nav {
 	cursor: pointer;
 	@include bp(phone) {
 		right: 2rem;
+	}
+	@include bp(tablet) {
+		right: 4rem;
 	}
 }
 
