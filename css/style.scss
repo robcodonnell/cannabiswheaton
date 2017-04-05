@@ -24,10 +24,18 @@ html {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
   height: 700px;
+}
+
+.pad-b {
+  padding-bottom: 1rem;
 }
 
 //hero banner
@@ -73,16 +81,49 @@ html {
 
 .para-box {
   padding: 1rem;
+  @include clearfix;
+  @include bp(phone) {
+    padding: 2rem;
+  }
   .para-header {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 100;
     margin-bottom: 1rem;
     line-height: 1.1;
+    @include bp(tablet) {
+      float: left;
+      width: 50%;
+      text-align: right;
+    }
+  }
+  .para-header-alt {
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    @include bp(tablet) {
+      float: left;
+      width: 100%;
+    }
   }
   .para-body {
     font-size: 16px;
     margin-bottom: 2rem;
     line-height: 1.4;
+    @include bp(tablet) {
+      float: left;
+      width: 50%;
+      padding-left: 2rem;
+    }
+  }
+  .para-body-alt {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    @include bp(tablet) {
+      float: left;
+      width: 50%;
+    }
   }
 }
 //connect bucket
@@ -94,8 +135,39 @@ html {
 .graphic {
   .large-graphic {
     display: none;
+    @include bp(tablet) {
+      display: block;
+    }
   }
   .small-graphic {
-
+    display: block;
+    @include bp(tablet) {
+      display: none;
+    }
+  }
+}
+//team page
+.team-profiles {
+  padding: 1rem;
+  @include bp(phone) {
+    padding: 2rem;
+  }
+  .team-member {
+    .team-photo {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .team-name {
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .team-title {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .team-bio {
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
   }
 }

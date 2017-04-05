@@ -1,8 +1,9 @@
 nav {
 	position: fixed;
-	height: 100px;
+	height: 80px;
 	z-index: 1000000;
 	width: 100%;
+	transition: .2s all linear;
 }
 
 .cw-logo {
@@ -10,6 +11,9 @@ nav {
 	position: absolute;
 	left: 1rem;
 	top: 1rem;
+	@include bp(phone) {
+		left: 2rem;
+	}
 }
 
 .overlay {
@@ -65,6 +69,9 @@ nav {
 	right: 1rem;
 	z-index: 1000;
 	cursor: pointer;
+	@include bp(phone) {
+		right: 2rem;
+	}
 }
 
 .ham-bars {

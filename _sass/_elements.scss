@@ -24,7 +24,7 @@
   display: block;
   margin: 0 auto;
   border: 1px solid #fff;
-  width: 50%;
+  width: 20%;
   transition: .2s all ease-in;
   &:hover {
     color: $navy;
@@ -42,7 +42,11 @@
   z-index: 1;
 }
 
+.hero-img {
+  height: 100%;
+}
+
 .img-banner {
-  height: 100vh;
+  height: 100%;
   transform: translateX(-36%);
 }
