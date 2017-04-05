@@ -5,9 +5,8 @@ $rubik: 'Rubik', sans-serif;
   color: $green;
   font-size: 42px;
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: light;
   text-transform: uppercase;
-  line-height: 1.3;
 }
 .hero-sub {
   color: #fff;
@@ -19,4 +18,18 @@ $rubik: 'Rubik', sans-serif;
   @include hero-text;
   width: 90%;
   z-index: 100;
+}
+
+.text-huge-green {
+  padding: 0 1rem 1rem 1rem;
+  color: $green;
+  .header-huge {
+    font-size: 80px;
+    margin-bottom: 1rem;
+  }
+  .content-huge {
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+
 }
