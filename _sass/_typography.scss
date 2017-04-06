@@ -53,7 +53,11 @@ $rubik: 'Rubik', sans-serif;
     padding: 0 2rem 2rem 2rem;
   }
   @include bp(tablet) {
-    padding-left: calc(50% + 2rem);
+    position: absolute;
+    @include clearfix;
+    right: 5.2rem;
+    top: 40%;
+
   }
   .header-huge {
     font-size: 80px;
