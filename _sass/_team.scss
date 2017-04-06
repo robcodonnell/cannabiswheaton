@@ -1,19 +1,5 @@
 @import "colors";
 
-.hero-header {
-  @include bp(tablet) {
-    font-size: 4rem;
-  }
-}
-
-.hero-sub {
-  max-width: 700px;
-  margin: auto;
-  @include bp(phone) {
-    font-size: 1rem;
-  }
-}
-
 .team-name {
   color: $green;
   margin-bottom: .5em;
