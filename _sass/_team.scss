@@ -89,12 +89,20 @@
         clear: none;
         width: 70%;
         float: left;
+<<<<<<< HEAD
         -webkit-column-count: 2; /* Chrome, Safari, Opera */
         -moz-column-count: 2; /* Firefox */
         column-count: 2;
       }
       @include bp(desktop) {
         column-gap: 2rem;
+=======
+      @include bp(desktop) {
+        clear: both;
+        column-count: 2;
+        float: left;
+      }
+>>>>>>> origin/team-responsive
       }
     }
   }
