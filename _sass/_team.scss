@@ -1,0 +1,87 @@
+@import "colors";
+
+.hero-header {
+  @include bp(tablet) {
+    font-size: 4rem;
+  }
+}
+
+.hero-sub {
+  max-width: 700px;
+  margin: auto;
+  @include bp(phone) {
+    font-size: 1rem;
+  }
+}
+
+.team-name {
+  color: $green;
+  margin-bottom: .5em;
+}
+
+.team-title {
+  font-size: 80%;
+}
+
+.team-profiles {
+  margin-bottom: 2rem;
+  @include wrapper;
+  .team-member {
+    font-size: 1rem;
+    margin: 2rem;
+    display: inline-block;
+    @include bp(phone) {
+      margin: 2rem;
+    }
+    @include bp(tablet) {
+      margin: 3rem 5rem 3rem 5rem;
+    }
+    @include bp(desktop) {
+    }
+    .team-photo {
+      margin-bottom: 1rem;
+      width: 100%;
+      @include bp(phone) {
+        width: 50%;
+        margin-right: 1.5rem;
+        float: left;
+      }
+      @include bp(tablet) {
+        width: 20%;
+        margin-right: 2.2rem;
+      }
+      @include bp(desktop) {
+        margin-right: 2rem;
+      }
+    }
+    .team-name {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 0.4rem;
+      @include bp(phone) {
+        font-size: 1.9rem;
+      }
+    }
+    .team-title {
+      font-style: italic;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .team-bio {
+      line-height: 1.6;
+      font-size: 0.8rem;
+      @include bp(phone) {
+        clear: both;
+      }
+      @include bp(tablet) {
+        clear: none;
+        width: 74%;
+        float: left;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        column-gap: 1.5rem;
+      }
+    }
+  }
+}
