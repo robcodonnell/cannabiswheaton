@@ -10,5 +10,5 @@ function closeNav() {
 };
 
 $way.waypoint(function () {
-  $nav.toggleClass('white-bg');
+  $nav.toggleClass('bg-navy');
 });
