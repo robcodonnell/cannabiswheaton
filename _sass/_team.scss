@@ -52,6 +52,11 @@
         clear: none;
         width: 65%;
         float: left;
+      @include bp(desktop) {
+        clear: both;
+        column-count: 2;
+        float: left;
+      }
       }
     }
   }
