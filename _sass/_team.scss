@@ -1,5 +1,30 @@
 @import "colors";
 
+.video-text-overlay {
+  max-width: 900px;
+}
+
+.hero-header {
+  @include bp(phone) {
+    font-size: 4rem;
+  }
+  @include bp(tablet) {
+    font-size: 5rem;
+  }
+  @include bp(desktop) {
+    font-size: 6rem;
+  }
+}
+
+.hero-sub {
+  @include bp(phone) {
+    font-size: 1rem;
+  }
+  @include bp(tablet) {
+    font-size: 1.5rem;
+  }
+}
+
 .team-name {
   color: $green;
   margin-bottom: .5em;
@@ -10,16 +35,18 @@
 }
 
 .team-profiles {
-  padding: 1rem;
-  @include bp(phone) {
-    padding: 2rem;
-  }
-  @include bp(tablet) {
-    padding: 2rem 4rem 2rem 4rem;
-  }
   .team-member {
+    font-size: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    @include bp(phone) {
+      margin: 2rem 2rem 3rem 2rem;
+    }
     @include bp(tablet) {
       display: inline-block;
+      margin: 2rem 2rem 3rem 2rem;
+    }
+    @include bp(desktop) {
+      margin: 3rem 10rem 4rem 10rem;
     }
     .team-photo {
       margin-bottom: 1rem;
@@ -30,12 +57,23 @@
         float: left;
       }
       @include bp(tablet) {
-        width: 30%;
+        width: 20%;
+        margin-right: 2rem;
+      }
+      @include bp(desktop) {
+        margin-right: 3rem;
       }
     }
     .team-name {
       font-weight: 700;
       font-size: 24px;
+      @include bp(phone) {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+      }
+      @include bp(desktop) {
+        font-size: 3rem;
+      }
     }
     .team-title {
       font-style: italic;
@@ -43,15 +81,20 @@
       margin-bottom: 1rem;
     }
     .team-bio {
-      margin-bottom: 2rem;
       line-height: 1.4;
       @include bp(phone) {
         clear: both;
       }
       @include bp(tablet) {
         clear: none;
-        width: 65%;
+        width: 70%;
         float: left;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+      }
+      @include bp(desktop) {
+        column-gap: 2rem;
       }
     }
   }
