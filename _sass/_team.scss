@@ -35,18 +35,19 @@
 }
 
 .team-profiles {
+  margin-bottom: 2rem;
   .team-member {
     font-size: 1rem;
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 2rem;
+    display: inline-block;
     @include bp(phone) {
-      margin: 2rem 2rem 3rem 2rem;
+      margin: 2rem;
     }
     @include bp(tablet) {
-      display: inline-block;
-      margin: 3rem 4rem 3rem 4rem;
+      margin: 3rem 5rem 3rem 5rem;
     }
     @include bp(desktop) {
-      margin: 3rem 10rem 4rem 10rem;
+      margin: 3rem 10rem 3rem 10rem;
     }
     .team-photo {
       margin-bottom: 1rem;
@@ -87,11 +88,12 @@
       }
       @include bp(tablet) {
         clear: none;
-        width: 75%;
+        width: 74%;
         float: left;
         -webkit-column-count: 2; /* Chrome, Safari, Opera */
         -moz-column-count: 2; /* Firefox */
         column-count: 2;
+        column-gap: 1.5rem;
       }
     }
   }
