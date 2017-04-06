@@ -43,7 +43,7 @@
     }
     @include bp(tablet) {
       display: inline-block;
-      margin: 2rem 2rem 3rem 2rem;
+      margin: 3rem 4rem 3rem 4rem;
     }
     @include bp(desktop) {
       margin: 3rem 10rem 4rem 10rem;
@@ -53,15 +53,15 @@
       width: 100%;
       @include bp(phone) {
         width: 50%;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         float: left;
       }
       @include bp(tablet) {
         width: 20%;
-        margin-right: 2rem;
+        margin-right: 2.2rem;
       }
       @include bp(desktop) {
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
     }
     .team-name {
@@ -87,22 +87,11 @@
       }
       @include bp(tablet) {
         clear: none;
-        width: 70%;
+        width: 75%;
         float: left;
-<<<<<<< HEAD
         -webkit-column-count: 2; /* Chrome, Safari, Opera */
         -moz-column-count: 2; /* Firefox */
         column-count: 2;
-      }
-      @include bp(desktop) {
-        column-gap: 2rem;
-=======
-      @include bp(desktop) {
-        clear: both;
-        column-count: 2;
-        float: left;
-      }
->>>>>>> origin/team-responsive
       }
     }
   }
