@@ -25,6 +25,7 @@
 
 .team-profiles {
   margin-bottom: 2rem;
+  @include wrapper;
   .team-member {
     font-size: 1rem;
     margin: 2rem;
@@ -36,7 +37,6 @@
       margin: 3rem 5rem 3rem 5rem;
     }
     @include bp(desktop) {
-      margin: 3rem 15rem 3rem 15rem;
     }
     .team-photo {
       margin-bottom: 1rem;
