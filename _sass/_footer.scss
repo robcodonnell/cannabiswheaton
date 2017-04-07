@@ -1,6 +1,9 @@
 footer {
   background-color: $navy;
   padding: 2rem 1rem;
+  @include bp(tablet) {
+    padding: 4rem;
+  }
   text-align: center;
   .soshmeeds {
     width: 50%;
