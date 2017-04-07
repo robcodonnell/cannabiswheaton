@@ -61,5 +61,17 @@ $rubik: 'Rubik', sans-serif;
     font-size: 22px;
     margin-bottom: 2rem;
   }
+}
 
+.contact-info {
+  p {
+    font-size: 24px;
+    font-weight: lighter;
+    color: $green;
+    margin-bottom: 1rem;
+    @include bp(tablet) {
+      font-size: 32px;
+      margin-bottom: 2rem;
+    }
+  }
 }
