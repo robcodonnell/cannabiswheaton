@@ -83,6 +83,19 @@ html {
     	object-fit: cover;
     }
   }
+  .down-arrow {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    .arrow {
+      width: 60px;
+      path {
+        fill: transparent;
+        stroke: $green;
+      }
+    }
+  }
 }
 
 //about bucket
