@@ -15,6 +15,11 @@ $way.waypoint(function () {
   $nav.toggleClass('bg-navy');
 });
 
+$('.para-box').waypoint(function () {
+  $('.para-box').css('opacity', 1);
+},
+{ offset: '70%' });
+
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

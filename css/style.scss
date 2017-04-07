@@ -109,6 +109,8 @@ html {
 
 .para-box {
   padding: 2rem;
+  opacity: 0;
+  transition: .7s all ease-in;
   @include clearfix;
   @include bp(phone) {
     padding: 2rem;
