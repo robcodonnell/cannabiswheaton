@@ -5,6 +5,7 @@ $rubik: 'Rubik', sans-serif;
   color: $green;
   font-size: 42px;
   margin-bottom: 1rem;
+  font-weight: lighter;
   text-transform: uppercase;
   @include bp(tablet) {
     font-size: 52px;

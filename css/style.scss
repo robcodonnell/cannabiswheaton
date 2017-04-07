@@ -221,8 +221,8 @@ html {
      }
   }
   .team-name {
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 400;
     margin-bottom: 0.4rem;
     text-transform: uppercase;
     @include bp(phone) {
