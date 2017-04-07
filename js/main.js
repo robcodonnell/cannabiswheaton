@@ -18,7 +18,12 @@ $way.waypoint(function () {
 $('.para-box').waypoint(function () {
   $('.para-box').css('opacity', 1);
 },
-{ offset: '70%' });
+{ offset: '80%' });
+
+$('.team-profiles').waypoint(function () {
+  $('.team-profiles').css('opacity', 1);
+},
+{ offset: '50%' });
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

@@ -38,6 +38,10 @@ html {
   padding-bottom: 2rem;
 }
 
+.mar-t {
+  margin-top: 2rem;
+}
+
 //hero banner
 .bg-video {
   height: 100vh;
@@ -202,6 +206,8 @@ html {
 
 .team-profiles {
   margin-bottom: 2rem;
+  opacity: 0;
+  transition: .7s all ease-in;
   padding: 2rem;
   @include bp(phone) {
     padding:  1rem 2rem;
