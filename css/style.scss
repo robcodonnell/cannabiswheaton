@@ -194,6 +194,18 @@ html {
     }
   }
 }
+.about-hero-bottom {
+  position: relative;
+  .video-dots {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-image: url({{site.baseurl}}/img/black-medium-checks.png);
+    background-repeat: repeat;
+  }
+
+}
 //team page
 .team-name {
  color: $green;

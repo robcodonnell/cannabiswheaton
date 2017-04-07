@@ -29,7 +29,7 @@ $rubik: 'Rubik', sans-serif;
 .hero-text {
   @include hero-text;
   width: 100%;
-  z-index: 100;
+  z-index: 100000;
   padding: 0 1rem;
   @include bp(phone) {
     padding: 0 2rem;
