@@ -108,7 +108,7 @@ html {
   }
   .para-header {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: lighter;
     margin-bottom: 1rem;
     line-height: 1.1;
     @include bp(tablet) {
@@ -120,7 +120,7 @@ html {
   }
   .para-header-alt {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: lighter;
     margin-bottom: 1rem;
     line-height: 1.1;
     @include bp(tablet) {
@@ -224,6 +224,7 @@ html {
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 0.4rem;
+    text-transform: uppercase;
     @include bp(phone) {
       font-size: 1.9rem;
     }
