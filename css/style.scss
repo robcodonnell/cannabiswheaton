@@ -10,7 +10,6 @@
 @import "reset";
 @import "elements";
 @import "footer";
-@import "team";
 
 
 //global
@@ -36,7 +35,7 @@ html {
 }
 
 .pad-b {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 //hero banner
@@ -47,7 +46,7 @@ html {
   .video-text-overlay {
     @include hero-text;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     @include bp(phone) {
       padding: 0 2rem;
     }
@@ -96,7 +95,7 @@ html {
 }
 
 .para-box {
-  padding: 1rem;
+  padding: 2rem;
   @include clearfix;
   @include bp(phone) {
     padding: 2rem;
@@ -132,6 +131,7 @@ html {
   }
   .para-body {
     font-size: 16px;
+    font-weight: lighter;
     margin-bottom: 2rem;
     line-height: 1.4;
     @include bp(tablet) {
@@ -142,6 +142,7 @@ html {
   }
   .para-body-alt {
     font-size: 16px;
+    font-weight: lighter;
     margin-bottom: 2rem;
     line-height: 1.4;
     @include bp(tablet) {
@@ -186,21 +187,21 @@ html {
 
 .team-profiles {
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   @include bp(phone) {
-    padding: 2rem;
+    padding:  1rem 2rem;
   }
   @include bp(tablet) {
-    padding: 4rem;
+    padding: 2rem 4rem;
   }
   @include bp(desktop) {
-    padding: 10rem;
+    padding: 4rem 10rem;
     @include wrapper;
   }
 }
 .team-member {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   display: inline-block;
 
   .team-photo {
