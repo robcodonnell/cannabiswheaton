@@ -37,7 +37,7 @@ nav {
 .overlay-content {
 	padding-left: 1rem;
 	position: relative;
-	top: 25%;
+	top: 10%;
 	width: 100%;
 	text-align: left;
 	margin-top: 2em;
@@ -63,10 +63,10 @@ nav {
 	transition: all 0.2s ease-in-out;
   font-family: $rubik;
 	@include bp(tablet) {
-		font-size: 86px;
+		font-size: 44px;
 	}
 	@include bp(desktop) {
-		font-size: 100px;
+		font-size: 48px;
 	}
 }
 
