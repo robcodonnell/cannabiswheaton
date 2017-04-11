@@ -6,11 +6,12 @@ meta:
 <section class="bg-video clearfix contact">
   <div class="video-text-overlay text-center">
     <h1 class="hero-header">Contact Us</h1>
-    <form method="POST" action="http://formspree.io/robe.od@gmail.com">
+    <form class="clearfix" method="POST" action="http://formspree.io/robe.od@gmail.com">
       <input type="text" name="fullname" placeholder="Your full name">
-      <input type="email" name="email" placeholder="Your email">
+      <input type="email" name="_replyto" placeholder="Your email address">
       <textarea name="message" placeholder="Your message"></textarea>
       <button type="submit">Send</button>
+      <input type="hidden" name="_next" value="{{site.baseurl}}/thanks.html" />
     </form>
   </div>
 
