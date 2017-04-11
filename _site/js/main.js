@@ -2,8 +2,8 @@ var $way = $('.way');
 var $nav = $('nav');
 
 function openNav() {
-  document.getElementById("myNav").style.width = "60%";
-  document.getElementById("myNav").style.opacity = "1";
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.opacity = ".95";
 };
 
 function closeNav() {

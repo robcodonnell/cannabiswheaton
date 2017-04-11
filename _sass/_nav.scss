@@ -55,6 +55,7 @@ nav {
 
 .overlay a {
 	padding: 10px;
+	margin-bottom: 1rem;
 	text-decoration: none;
 	font-size: 40px;
 	font-weight: 300;
@@ -64,9 +65,11 @@ nav {
   font-family: $rubik;
 	@include bp(tablet) {
 		font-size: 44px;
+		margin-bottom: 2rem;
 	}
 	@include bp(desktop) {
-		font-size: 48px;
+		font-size: 54px;
+		margin-bottom: 3rem;
 	}
 }
 

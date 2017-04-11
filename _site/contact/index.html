@@ -22,6 +22,7 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
   <div class="overlay-content">
+    <a href="/" onclick="closeNav()">HOME</a>
     <a href="/about" onclick="closeNav()">ABOUT US</a>
     <a href="/team" onclick="closeNav()">TEAM</a>
     <a href="/contact" onclick="closeNav()">CONTACT</a>
@@ -36,39 +37,24 @@
 
   <main>
 
-    <section class="bg-video clearfix">
+    <section class="bg-video clearfix contact">
   <div class="video-text-overlay text-center">
-    <h1 class="hero-header way">GET IN TOUCH</h1>
+    <h1 class="hero-header">Contact Us</h1>
+    <form method="POST" action="http://formspree.io/robe.od@gmail.com">
+      <input type="text" name="fullname" placeholder="Your full name">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 
   <div class="video-dots">
   </div>
 
   <div class="fullscreen-bg">
-    <video muted autoplay poster="https://res.cloudinary.com/dtbrkt2ur/image/upload/v1491316366/kscope-b-home_d2pjtb.jpg" class="fullscreen-bg__video">
+    <video muted autoplay poster="https://res.cloudinary.com/dtbrkt2ur/image/upload/v1491849152/poster_olegsz.jpg" class="fullscreen-bg__video">
         <source src="https://res.cloudinary.com/dtbrkt2ur/video/upload/v1491329572/web-background-480p_2_h2i7xm.mov">
     </video>
-  </div>
-  <a class="down-arrow" href="#smooth" id="smooth">
-    <svg class="arrow">
-      <path class="a1" d="M0 40 L30 72 L60 40"></path>
-    </svg>
-  </a>
-</section>
-
-<section class="text-section">
-  <div class="para-box">
-    <h1 class="para-header-alt">Contact us</h1>
-    <div class="para-body-alt">
-      <p class="pad-b">950 Gladstone Ave. Ottawa, ON K1Y4L8</p>
-      <div class="text-center">
-        <a class="button-dark" href="https://www.google.ca/maps/place/950+Gladstone+Ave,+Ottawa,+ON+K1Y+4L8/@45.4032667,-75.7173527,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0437aa672633:0x509214dc8b0a9b1a!8m2!3d45.4032667!4d-75.715164">VIEW MAP</a>
-      </div>
-    </div>
-    <div class="contact-info mar-t">
-      <p>Phone: 613 666 6666</p>
-      <p>Email: info@cannabiswheaton.com</p>
-    </div>
   </div>
 </section>
 
@@ -89,7 +75,6 @@
   </div>
   <div class="footer-text">
     <p class="copyright">© 2017 Cannabis Wheaton</p>
-    <p class="address">950 Gladstone Ave, Ottawa, ON K1Y 4L8</p>
   </div>
 </footer>
 
