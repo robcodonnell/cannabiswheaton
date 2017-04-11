@@ -96,16 +96,16 @@ $rubik: 'Rubik', sans-serif;
   font-weight: lighter;
   padding: 0;
   color: $green;
-  @include bp(phone) {
-    padding: 0 2rem 2rem 2rem;
-  }
   @include bp(tablet) {
-    padding-left: calc(50% + 2rem)
-
+    width: 100%;
+    clear: both;
   }
   .content-huge ~ .header-huge {
     padding-top: 2rem;
     border-top: 1px solid $green;
+    @include bp(tablet) {
+      border-top: none;
+    }
   }
   .header-huge {
     font-size: 90px;

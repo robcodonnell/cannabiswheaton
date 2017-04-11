@@ -1,20 +1,30 @@
 footer {
+  position: relative;
   background-color: $navy;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   @include bp(tablet) {
     padding: 4rem;
   }
-  text-align: center;
+  .cw-logo {
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .soshmeeds {
-    width: 50%;
-    margin: 0 auto 1rem auto;
-    .sosh-icon {
+    text-align: right;
+    width: 60%;
+    margin: 0 0 0 auto;
+    .sosh-link {
+      font-size: 12px;
+      color: #fff;
+      font-weight: lighter;
       display: inline-block;
-      width: 30px;
-      margin: 0 5px;
+      margin: 5px 5px;
     }
   }
   .footer-text {
+    width: 30%;
+    display: inline-block;
     color: #fff;
     .copyright {
       font-size: 8px;
