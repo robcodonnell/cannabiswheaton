@@ -1,9 +1,9 @@
 @import "mixins";
-$rubik: 'Rubik', sans-serif;
+$weiss: 'weissenhof_grotesk', sans-serif;
 
 .hero-header {
   color: $green;
-  font-size: 42px;
+  font-size: 32px;
   margin-bottom: 1rem;
   font-weight: lighter;
   text-transform: uppercase;
@@ -93,6 +93,7 @@ $rubik: 'Rubik', sans-serif;
 }
 
 .text-huge-green {
+  @include clearfix;
   font-weight: lighter;
   padding: 0;
   color: $green;
@@ -100,11 +101,24 @@ $rubik: 'Rubik', sans-serif;
     width: 100%;
     clear: both;
   }
-  .content-huge ~ .header-huge {
+  .huge-text-box {
+    width: 80%;
+    @include bp(tablet) {
+      width: 50%;
+      float: left;
+      text-align: right;
+      padding-right: 1rem;
+    }
+  }
+  .huge-text-box:nth-child(2) {
     padding-top: 2rem;
     border-top: 1px solid $green;
     @include bp(tablet) {
       border-top: none;
+      padding-top: 0;
+      text-align: left;
+      border-left: 1px solid $green;
+      padding-left: 1rem;
     }
   }
   .header-huge {

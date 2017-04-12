@@ -8,6 +8,7 @@ nav {
 
 .cw-logo {
 	width: 60px;
+	z-index: 1000000000000;
 	position: absolute;
 	left: 2rem;
 	top: 1.3rem;
@@ -35,62 +36,56 @@ nav {
 }
 
 .overlay-content {
-	padding-left: 1rem;
 	position: relative;
-	top: 10%;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 100%;
-	text-align: left;
-	margin-top: 2em;
+	text-align: center;
 	opacity: 1;
-	@include bp(phone) {
-		padding-left: 2rem;
-	}
-	@include bp(tablet) {
-		padding-left: 4rem;
-	}
-	@include bp(desktop) {
-		padding-left: 10rem;
-	}
 }
 
 .overlay a {
-	padding: 10px;
-	margin-bottom: 1rem;
+	padding: 1rem 0;
 	text-decoration: none;
 	font-size: 40px;
 	font-weight: 300;
 	color: #fff;
-	display: table;
-	transition: all 0.2s ease-in-out;
-  font-family: $rubik;
+	display: block;
+	transition: all 0.1s ease-in-out;
+  font-family: $weiss;
 	@include bp(tablet) {
 		font-size: 44px;
-		margin-bottom: 2rem;
+		padding: 2rem 0;
 	}
 	@include bp(desktop) {
 		font-size: 54px;
-		margin-bottom: 3rem;
 	}
 }
 
 .overlay a:hover, .overlay a:focus {
-	color: $green;
+	background-color: $green;
+	color: $navy;
 	outline: none;
 }
 
 .overlay .closebtn {
 	position: absolute;
-  top: -1px;
-  right: 1px;
+	padding: 0;
+  top: 10px;
+  right: 10px;
 	font-size: 50px;
+	&:hover {
+		background-color: transparent;
+		color: #fff;
+	}
 	@include bp(phone) {
-		right: 1rem;
+		right: 26px;
 	}
 	@include bp(tablet) {
-		right: 3rem;
+		right: 58px;
 	}
 	@include bp(desktop) {
-		right: 9rem;
+		right: 154px;
 	}
 }
 
