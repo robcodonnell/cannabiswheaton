@@ -7,7 +7,7 @@ nav {
 }
 
 .cw-logo {
-	width: 60px;
+	width: 140px;
 	z-index: 1000000000000;
 	position: absolute;
 	left: 2rem;
@@ -55,7 +55,7 @@ nav {
   font-family: $weiss;
 	@include bp(tablet) {
 		font-size: 44px;
-		padding: 2rem 0;
+		padding: 1.5rem 0;
 	}
 	@include bp(desktop) {
 		font-size: 54px;

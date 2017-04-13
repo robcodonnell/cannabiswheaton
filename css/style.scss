@@ -40,7 +40,7 @@ html {
 
 .banner {
   height: 700px;
-  background-color: $grey;
+  background-color: $l-grey;
   position: relative;
   overflow: hidden;
   @include bp(tablet) {
@@ -190,17 +190,30 @@ html {
 .connect-hero {
   position: relative;
   overflow: hidden;
-  @include bp(desktop) {
-    height: 70%;
+  @include bp(tablet) {
+    height: 500px;
+  }
+  .hero-img {
+    .img-flex {
+      @include bp(desktop) {
+        transform: translateY(-25%);
+      }
+    }
   }
 }
 
 //about-page
 .graphic {
+  background-color: #4b4e53;
   .large-graphic {
     display: none;
     @include bp(tablet) {
       display: block;
+    }
+    .img-flex {
+      @include bp(desktop) {
+        height: 500px;
+      }
     }
   }
   .small-graphic {
@@ -208,6 +221,9 @@ html {
     @include bp(tablet) {
       display: none;
     }
+  }
+  @include bp(desktop) {
+    height: 500px;
   }
 }
 
@@ -329,13 +345,13 @@ html {
         height: 40px;
         padding: 15px;
         border: none;
-        border-bottom: 2px solid #fff;
+        border-bottom: 1px solid #fff;
         background-color: transparent;
         font-family: $weiss;
         color: #fff;
         font-size: 16px;
         &:focus {
-          border-bottom: 2px solid $green;
+          border-bottom: 1px solid $green;
         }
         @include bp(tablet) {
           width: calc(50% - 2rem);
@@ -355,14 +371,14 @@ html {
         padding: 15px;
         border: none;
         outline: none;
-        border-bottom: 2px solid #fff;
+        border-bottom: 1px solid #fff;
         background-color: transparent;
         font-family: $weiss;
         color: #fff;
         font-size: 16px;
         margin-bottom: 2rem;
         &:focus {
-          border-bottom: 2px solid $green;
+          border-bottom: 1px solid $green;
         }
         @include bp(tablet) {
           width: 50%;

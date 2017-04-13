@@ -44,7 +44,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 }
 
 .banner-header {
-  color: $green;
+  color: $navy;
   font-size: 32px;
   margin-bottom: 1rem;
   font-weight: lighter;
@@ -55,7 +55,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 }
 .banner-sub {
   font-weight: lighter;
-  color: #fff;
+  color: $navy;
   line-height: 1.4;
   margin-bottom: 2rem;
   @include bp(phone) {
@@ -100,6 +100,10 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   @include bp(tablet) {
     width: 100%;
     clear: both;
+    padding: 2rem 0;
+  }
+  @include bp(desktop) {
+    padding: 4rem 0;
   }
   .huge-text-box {
     width: 80%;
