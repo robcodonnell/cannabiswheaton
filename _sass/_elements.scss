@@ -42,15 +42,16 @@
 }
 
 .img-oversize {
-  width: 200%;
-  transform: translateX(-25%);
+  width: 320%;
+  transform: translateX(-34%);
   z-index: 1;
   @include bp(tablet) {
-    width: 160%;
-    transform: translateX(0);
+    width: 200%;
+    transform: translateX(-20%);
   }
   @include bp(desktop) {
     width: 100%;
+    transform: translateX(0%);
   }
 }
 

@@ -228,10 +228,19 @@ html {
 }
 
 
-.banner-img {
+.banner-img-left {
   @include bp(tablet) {
     width: 50%;
     float: left;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+.banner-img-right {
+  @include bp(tablet) {
+    width: 50%;
+    float: right;
     z-index: 1;
     overflow: hidden;
   }
