@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'weissenhof_grotesk';
-  src: url('/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff2') format('woff2'),
-       url('/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff') format('woff');
+  src: url('{{site.baseurl}}/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff2') format('woff2'),
+       url('{{site.baseurl}}/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
