@@ -219,7 +219,7 @@ html {
     }
     .img-flex {
       @include bp(desktop) {
-        height: 500px;
+        height: 600px;
       }
     }
   }
@@ -230,7 +230,16 @@ html {
     }
   }
   @include bp(desktop) {
-    height: 500px;
+    height: 600px;
+  }
+}
+
+
+
+.about-grid {
+  @include wrapper;
+  .graphic {
+    background-color: transparent;
   }
 }
 
