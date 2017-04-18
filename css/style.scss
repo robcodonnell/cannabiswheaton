@@ -234,11 +234,29 @@ html {
   }
 }
 
+.about-financial {
+  @include clearfix;
+  .para-box {
+    @include bp(tablet) {
+      width: 50%;
+      padding-right: 0;
+      float: left;
+    }
+  }
+}
+
+.about-grid {
+  clear: both;
+}
+
 .banner-img-left {
   img {
     width: 330%;
     @include bp(tablet) {
       width: 150%;
+    }
+    @include bp(desktop) {
+      width: 100%;
     }
   }
   @include bp(tablet) {
@@ -254,6 +272,9 @@ html {
     width: 330%;
     @include bp(tablet) {
       width: 150%;
+    }
+    @include bp(desktop) {
+      width: 100%;
     }
   }
   @include bp(tablet) {
