@@ -26,15 +26,14 @@ meta:
 </section>
 
 <section class="team-profiles">
-  {% for data in site.data.staff %}
-    {% assign team = data[1] %}
+  {% for member in site.data.members %}
     <div class="team-member">
       <div class="team-photo">
-        <img class="img-flex" src="{{site.baseurl}}/{{team.img}}" alt="">
+        <img class="img-flex" src="{{site.baseurl}}/{{member.img}}" alt="">
       </div>
-      <h3 class="team-name">{{team.name}}</h3>
-      <p class="team-title">{{team.title}}</p>
-      <p class="team-bio">{{team.bio}}</p>
+      <h3 class="team-name">{{member.name}}</h3>
+      <p class="team-title">{{member.title}}</p>
+      <p class="team-bio">{{member.bio}}</p>
     </div>
   {% endfor %}
 </section>
