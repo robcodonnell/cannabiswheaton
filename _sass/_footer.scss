@@ -15,8 +15,8 @@ footer {
     }
     @include bp(tablet) {
       position: absolute;
-      left: 4rem;
-      top: 50%;
+      left: 6.5rem;
+      top: 40%;
       transform: translateY(-50%);
       margin-bottom: 0;
     }
@@ -31,6 +31,7 @@ footer {
       right: 4rem;
       top: 50%;
       transform: translateY(-50%);
+      text-align: right;
     }
     @include bp(desktop) {
       right: 10rem;
@@ -44,6 +45,10 @@ footer {
       &:hover {
         color: #fff;
       }
+      @include bp(tablet) {
+        display: block;
+        padding-bottom: .5rem;
+      }
     }
   }
   .footer-copyright {
@@ -54,9 +59,32 @@ footer {
     @include bp(tablet) {
       padding-bottom: 0;
       position: absolute;
-      left: 50%;
+      left: 4rem;
+      top: 60%;
+    }
+  }
+  .footer-nav {
+    padding-bottom: 1rem;
+    .footer-link {
+      font-size: 12px;
+      padding: 0 1rem;
+      text-decoration: none;
+      color: $m-grey;
+      &:hover {
+        color: #fff;
+      }
+      @include bp(tablet) {
+        display: block;
+        padding-bottom: .5rem;
+      }
+    }
+    @include bp(tablet) {
+      padding: 0;
+      text-align: right;
+      position: absolute;
+      right: 20%;
       top: 50%;
-      transform: translate(-50%,-50%);
+      transform: translateY(-50%);
     }
   }
 }
