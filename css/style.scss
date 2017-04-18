@@ -234,17 +234,13 @@ html {
   }
 }
 
-
-
-.about-grid {
-  @include wrapper;
-  .graphic {
-    background-color: transparent;
-  }
-}
-
-
 .banner-img-left {
+  img {
+    width: 330%;
+    @include bp(tablet) {
+      width: 150%;
+    }
+  }
   @include bp(tablet) {
     width: 50%;
     float: left;
@@ -254,6 +250,12 @@ html {
 }
 
 .banner-img-right {
+  img {
+    width: 330%;
+    @include bp(tablet) {
+      width: 150%;
+    }
+  }
   @include bp(tablet) {
     width: 50%;
     float: right;
