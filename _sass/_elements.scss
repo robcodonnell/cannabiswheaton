@@ -56,7 +56,17 @@
 }
 
 .hero-img {
-  height: 100%;
+  height: 300px;
+  img {
+    height: 100%;
+    @include bp(phone) {
+      width: 130%;
+      height: auto;
+    }
+    @include bp(tablet) {
+      width: 100%;
+    }
+  }
 }
 
 .img-banner {

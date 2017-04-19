@@ -43,6 +43,76 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   }
 }
 
+.text-section {
+  padding: 2rem 0;
+  position: relative;
+  @include bp(desktop) {
+    @include wrapper;
+  }
+}
+
+.para-box {
+  padding: 1rem;
+  opacity: 0;
+  transition: .7s all ease-in;
+  @include clearfix;
+  @include bp(phone) {
+    padding: 2rem;
+  }
+  @include bp(tablet) {
+    padding: 2rem 4rem;
+  }
+  @include bp(desktop) {
+    padding: 2rem 10rem;
+  }
+  .para-header {
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    @include bp(tablet) {
+      font-size: 48px;
+      float: left;
+      width: 50%;
+      text-align: right;
+    }
+  }
+  .para-header-alt {
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    @include bp(tablet) {
+      font-size: 48px;
+      float: left;
+      width: 100%;
+    }
+  }
+  .para-body {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    @include bp(tablet) {
+      padding-top: 10px;
+      float: left;
+      width: 50%;
+      padding-left: 2rem;
+    }
+  }
+  .para-body-alt {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    @include bp(tablet) {
+      padding-top: 10px;
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
 .banner-header {
   color: $green;
   font-size: 32px;
@@ -138,8 +208,12 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   }
   @include bp(tablet) {
     float: left;
-    width: 50%;
+    width: 35%;
     padding: 2rem 4rem 0 2rem;
+  }
+  @include bp(desktop) {
+    width: 40%;
+    padding-right: 0;
   }
   .huge-text-box {
     width: 80%;

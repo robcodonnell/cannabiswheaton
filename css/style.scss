@@ -42,7 +42,7 @@ html {
 .hero {
   position: relative;
   overflow: hidden;
-  height: 700px;
+  height: 300px;
 }
 
 .banner {
@@ -123,76 +123,6 @@ html {
   }
 }
 
-//about bucket
-.text-section {
-  padding: 2rem 0;
-  position: relative;
-  @include bp(desktop) {
-    @include wrapper;
-  }
-}
-
-.para-box {
-  padding: 2rem;
-  opacity: 0;
-  transition: .7s all ease-in;
-  @include clearfix;
-  @include bp(phone) {
-    padding: 2rem;
-  }
-  @include bp(tablet) {
-    padding: 2rem 4rem;
-  }
-  @include bp(desktop) {
-    padding: 2rem 10rem;
-  }
-  .para-header {
-    font-size: 36px;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-    line-height: 1.1;
-    @include bp(tablet) {
-      font-size: 48px;
-      float: left;
-      width: 50%;
-      text-align: right;
-    }
-  }
-  .para-header-alt {
-    font-size: 36px;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-    line-height: 1.1;
-    @include bp(tablet) {
-      font-size: 48px;
-      float: left;
-      width: 100%;
-    }
-  }
-  .para-body {
-    font-size: 16px;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-    line-height: 1.4;
-    @include bp(tablet) {
-      padding-top: 10px;
-      float: left;
-      width: 50%;
-      padding-left: 2rem;
-    }
-  }
-  .para-body-alt {
-    font-size: 16px;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-    line-height: 1.4;
-    @include bp(tablet) {
-      padding-top: 10px;
-      float: left;
-      width: 50%;
-    }
-  }
-}
 //connect bucket
 .connect-hero {
   position: relative;
@@ -236,11 +166,37 @@ html {
 
 .about-financial {
   @include clearfix;
+  @include bp(desktop) {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
   .para-box {
     @include bp(tablet) {
-      width: 50%;
+      width: 65%;
       padding-right: 0;
       float: left;
+    }
+    @include bp(desktop) {
+      width: 60%;
+      padding-left: 0;
+    }
+  }
+  .para-body-alt {
+    @include bp(tablet) {
+      width: 100%;
+    }
+  }
+}
+
+.wheaton-benefit {
+  .hero {
+    position: relative;
+    .video-dots {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      background-image: url({{site.baseurl}}/img/black-medium-checks.png);
+      background-repeat: repeat;
     }
   }
 }
