@@ -16,7 +16,7 @@ footer {
     @include bp(tablet) {
       position: absolute;
       left: 4rem;
-      top: 2.5rem;
+      top: 2.7rem;
       transform: translateY(-50%);
       margin-bottom: 0;
     }
@@ -61,7 +61,7 @@ footer {
       padding-bottom: 0;
       position: absolute;
       right: 4rem;
-      top: 2rem;
+      top: 1.9rem;
     }
     @include bp(desktop) {
       right: 10rem;

@@ -47,7 +47,6 @@ html {
 
 .banner {
   height: 700px;
-  background-color: $l-grey;
   position: relative;
   overflow: hidden;
   @include bp(tablet) {
@@ -209,14 +208,14 @@ html {
   img {
     width: 330%;
     @include bp(tablet) {
-      width: 150%;
+      width: 100%;
     }
     @include bp(desktop) {
       width: 100%;
     }
   }
   @include bp(tablet) {
-    width: 50%;
+    width: 35%;
     float: left;
     z-index: 1;
     overflow: hidden;
@@ -227,14 +226,14 @@ html {
   img {
     width: 330%;
     @include bp(tablet) {
-      width: 150%;
+      width: 100%;
     }
     @include bp(desktop) {
       width: 100%;
     }
   }
   @include bp(tablet) {
-    width: 50%;
+    width: 35%;
     float: right;
     z-index: 1;
     overflow: hidden;
