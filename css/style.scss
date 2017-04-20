@@ -423,3 +423,13 @@ html {
     }
   }
 }
+
+//Thank-you page
+
+.thanks-page {
+  height: 100vh;
+  padding-top: 30%;
+  @include bp(tablet) {
+    padding-top: 20%;
+  }
+}
