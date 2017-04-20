@@ -15,26 +15,26 @@ footer {
     }
     @include bp(tablet) {
       position: absolute;
-      left: 6.5rem;
-      top: 40%;
+      left: 4rem;
+      top: 2.5rem;
       transform: translateY(-50%);
       margin-bottom: 0;
     }
     @include bp(desktop) {
-      left: 12.5rem;
+      left: 10rem;
     }
   }
   .soshmeeds {
     display: block;
     @include bp(tablet) {
       position: absolute;
-      right: 20%;
+      right: 20rem;
       top: 50%;
       transform: translateY(-50%);
       text-align: right;
     }
     @include bp(desktop) {
-      right: 20rem;
+      right: 28rem;
     }
     .sosh-link {
       font-style: italic;
@@ -60,12 +60,11 @@ footer {
     @include bp(tablet) {
       padding-bottom: 0;
       position: absolute;
-      left: 4rem;
-      top: 60%;
+      right: 4rem;
+      top: 2rem;
     }
     @include bp(desktop) {
-      left: 10rem;
-      top: 60%;
+      right: 10rem;
     }
   }
   .footer-nav {
@@ -87,12 +86,12 @@ footer {
       padding: 0;
       text-align: right;
       position: absolute;
-      right: 4rem;
+      right: 14rem;
       top: 50%;
       transform: translateY(-50%);
     }
     @include bp(desktop) {
-      right: 10rem;
+      right: 21rem;
     }
   }
 }

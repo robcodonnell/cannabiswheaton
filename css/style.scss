@@ -295,6 +295,10 @@ html {
     text-transform: uppercase;
     @include bp(phone) {
       font-size: 1.9rem;
+      padding-top: 4rem;
+    }
+    @include bp(tablet) {
+      padding-top: 2rem;
     }
   }
   .team-title {
