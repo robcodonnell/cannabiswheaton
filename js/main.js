@@ -39,3 +39,7 @@ $(function() {
     }
   });
 });
+
+$(document).ready(function () {
+  $(".gif").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1492718034/leaf_juc8zd.gif?" + Math.random());
+});
