@@ -46,9 +46,7 @@ html {
 }
 
 .banner {
-  height: 700px;
   position: relative;
-  overflow: hidden;
   @include bp(tablet) {
     height: 400px;
   }
@@ -206,7 +204,7 @@ html {
 
 .banner-img-left {
   img {
-    width: 330%;
+    width: 100%;
     @include bp(tablet) {
       width: 100%;
     }
@@ -225,7 +223,7 @@ html {
 
 .banner-img-right {
   img {
-    width: 330%;
+    width: 100%;
     @include bp(tablet) {
       width: 100%;
     }
