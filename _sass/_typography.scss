@@ -134,6 +134,9 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   @include bp(tablet) {
     margin-bottom: 0;
   }
+  @include bp(desktop) {
+    column-count: 2;
+  }
 }
 
 .banner-text-right {
