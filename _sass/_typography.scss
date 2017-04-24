@@ -90,6 +90,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
       font-size: 48px;
       width: 100%;
       margin-bottom: 2rem;
+      padding: 0 2rem;
     }
   }
   .para-body {
@@ -121,12 +122,12 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 
 .banner-header {
   color: $navy;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 1rem;
   font-weight: lighter;
   text-transform: uppercase;
   @include bp(tablet) {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .banner-sub {
@@ -140,9 +141,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   @include bp(tablet) {
     margin-bottom: 0;
   }
-  @include bp(desktop) {
-    column-count: 2;
-  }
+
 }
 
 .banner-text-right {
@@ -159,17 +158,17 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     top: 50%;
     left: 50%;
     height: auto;
-    padding: 4rem 4rem;
-    width: 70%;
+    padding: 4rem 0;
+    width: 50%;
     float: left;
-    transform: translate(-28%,-50%);
-    top: 50%;
+    transform: translate(-10%,-50%);
     text-align: left;
     background-color: transparent;
   }
   @include bp(desktop) {
     padding: 0 10rem 0 4rem;
     @include wrapper;
+    width: 60%;
   }
 }
 
@@ -187,17 +186,35 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     left: 50%;
     position: absolute;
     height: auto;
-    padding: 4rem 4rem;
-    width: 70%;
+    padding: 4rem 0;
+    width: 50%;
     float: right;
-    transform: translate(-72%,-50%);
-    top: 50%;
-    right: 50%;
+    transform: translate(-90%,-50%);
     text-align: left;
     background-color: transparent;
   }
   @include bp(desktop) {
     padding: 0 4rem 0 10rem;
+    @include wrapper;
+    width: 60%;
+  }
+}
+
+.banner-text-center {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  z-index: 100000;
+  padding:  0 1rem;
+  @include bp(phone) {
+    padding: 0 2rem;
+  }
+  @include bp(tablet) {
+    height: auto;
+    text-align: left;
+    background-color: transparent;
+  }
+  @include bp(desktop) {
   }
 }
 
