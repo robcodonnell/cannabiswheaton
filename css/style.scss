@@ -141,8 +141,22 @@ html {
   background-color: #4b4e53;
   .large-graphic {
     display: none;
+    @include bp(desktop) {
+      display: block;
+    }
+    .img-flex {
+      @include bp(desktop) {
+        height: 600px;
+      }
+    }
+  }
+  .med-graphic {
+    display: none;
     @include bp(tablet) {
       display: block;
+    }
+    @include bp(desktop) {
+      display: none;
     }
     .img-flex {
       @include bp(desktop) {
