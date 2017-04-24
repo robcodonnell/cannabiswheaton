@@ -4,7 +4,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 .hero-header {
   color: $green;
   font-size: 32px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: lighter;
   text-transform: uppercase;
   @include bp(tablet) {
@@ -15,7 +15,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   font-weight: lighter;
   color: #fff;
   line-height: 1.4;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   @include bp(phone) {
     font-size: 16px;
   }
@@ -104,7 +104,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
       margin-right: auto;
     }
     p {
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.5rem;
     }
   }
   .para-body-alt {
