@@ -169,13 +169,11 @@ html {
   }
   .para-box {
     @include bp(tablet) {
-      width: 65%;
-      padding-right: 0;
-      float: left;
+      width: 100%;
     }
     @include bp(desktop) {
-      width: 60%;
       padding-left: 0;
+      padding-right: 0;
     }
   }
   .para-body-alt {
@@ -188,10 +186,11 @@ html {
 .wheaton-benefit {
   .hero {
     position: relative;
+    height: 200px;
     .video-dots {
       position: absolute;
       width: 100%;
-      height: 300px;
+      height: 200px;
       background-image: url({{site.baseurl}}/img/black-medium-checks.png);
       background-repeat: repeat;
     }
@@ -316,7 +315,7 @@ html {
     }
     @include bp(tablet) {
       clear: none;
-      width: 74%;
+      width: 100%;
       float: left;
       -webkit-column-count: 2; /* Chrome, Safari, Opera */
       -moz-column-count: 2; /* Firefox */
@@ -331,6 +330,7 @@ html {
   .video-text-overlay {
     form {
       position: relative;
+      margin-top: 5rem;
       ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: #fff;
         font-size: 12px;
@@ -353,20 +353,20 @@ html {
         outline: none;
         margin-bottom: 1rem;
         height: 40px;
-        padding: 15px;
+        padding: 0;
         border: none;
-        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
         background-color: transparent;
         font-family: $weiss;
         color: #fff;
         font-size: 16px;
         &:focus {
-          border-bottom: 1px solid $green;
+          border-top: 1px solid $green;
         }
         @include bp(tablet) {
           width: calc(50% - 2rem);
           float: left;
-          height: 100px;
+          height: 80px;
           margin-right: 2rem;
         }
       }
@@ -381,14 +381,14 @@ html {
         padding: 15px;
         border: none;
         outline: none;
-        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
         background-color: transparent;
         font-family: $weiss;
         color: #fff;
         font-size: 16px;
         margin-bottom: 2rem;
         &:focus {
-          border-bottom: 1px solid $green;
+          border-top: 1px solid $green;
         }
         @include bp(tablet) {
           width: 50%;
@@ -396,7 +396,7 @@ html {
           position: absolute;
           top: 0;
           right: 0;
-          padding-top: 44px;
+          padding-top: 32px;
         }
       }
       button {
@@ -419,7 +419,8 @@ html {
         @include bp(tablet) {
           position: absolute;
           bottom: -4rem;
-          right: 0;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
     }

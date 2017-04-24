@@ -46,12 +46,16 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 .text-section {
   padding: 2rem 0;
   position: relative;
+  @include bp(tablet) {
+    padding: 6rem 0;
+  }
   @include bp(desktop) {
     @include wrapper;
   }
 }
 
 .para-box {
+  text-align: center;
   padding: 1rem;
   opacity: 0;
   transition: .7s all ease-in;
@@ -84,8 +88,8 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     line-height: 1.1;
     @include bp(tablet) {
       font-size: 48px;
-      float: left;
       width: 100%;
+      margin-bottom: 2rem;
     }
   }
   .para-body {
@@ -94,10 +98,12 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     margin-bottom: 2rem;
     line-height: 1.4;
     @include bp(tablet) {
-      padding-top: 10px;
-      float: left;
-      width: 50%;
-      padding-left: 2rem;
+      padding: 10px 5rem 0 5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      margin-bottom: 1.8rem;
     }
   }
   .para-body-alt {
@@ -197,6 +203,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 
 .text-huge-green {
   @include clearfix;
+  text-align: center;
   font-weight: lighter;
   padding: 0 1rem;
   color: $green;
@@ -204,25 +211,28 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     padding: 0 2rem;
   }
   @include bp(tablet) {
-    float: left;
-    width: 35%;
-    padding: 2rem 4rem 0 2rem;
+    width: 100%;
+    padding: 2rem 4rem;
   }
   @include bp(desktop) {
-    width: 40%;
     padding-right: 0;
   }
   .huge-text-box {
-    width: 80%;
+    width: 100%;
     @include bp(tablet) {
-      width: 100%;
+      width: 50%;
       float: left;
-      padding-right: 1rem;
+      padding: 0 2rem;
     }
   }
   .huge-text-box:nth-child(2) {
     padding-top: 1rem;
     border-top: 1px solid $green;
+    @include bp(tablet) {
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid $green;
+    }
   }
   .header-huge {
     font-size: 90px;

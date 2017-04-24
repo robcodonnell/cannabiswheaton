@@ -8,16 +8,17 @@ footer {
     height: 120px;
   }
   .w-icon {
-    display: block;
-    margin-bottom: 1rem;
     svg {
-      width: 40px;
+      width: 55px;
+      margin: 2rem 0;
+      @include bp(tablet) {
+        margin: 0;
+      }
     }
     @include bp(tablet) {
       position: absolute;
       left: 4rem;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 2rem;
       margin-bottom: 0;
     }
     @include bp(desktop) {
@@ -38,6 +39,7 @@ footer {
     }
     .sosh-link {
       font-style: italic;
+      text-decoration: none;
       font-size: 12px;
       color: $m-grey;
       font-weight: lighter;
@@ -61,15 +63,13 @@ footer {
       padding-bottom: 0;
       position: absolute;
       right: 4rem;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 2rem;
     }
     @include bp(desktop) {
       right: 10rem;
     }
   }
   .footer-nav {
-    padding-bottom: 1rem;
     .footer-link {
       font-size: 12px;
       padding: 0 1rem;
