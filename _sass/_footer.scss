@@ -38,7 +38,6 @@ footer {
     @include bp(desktop) {
     }
     .sosh-link {
-      font-style: italic;
       text-decoration: none;
       font-size: 12px;
       color: $m-grey;
