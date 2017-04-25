@@ -4,7 +4,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 .hero-header {
   color: $green;
   font-size: 32px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: lighter;
   text-transform: uppercase;
   @include bp(tablet) {
@@ -89,7 +89,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     @include bp(tablet) {
       font-size: 48px;
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       padding: 0 2rem;
     }
   }
@@ -99,7 +99,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     margin-bottom: 2rem;
     line-height: 1.4;
     @include bp(tablet) {
-      padding: 10px 5rem 0 5rem;
+      padding: 0 5rem 0 5rem;
       margin-left: auto;
       margin-right: auto;
     }
@@ -233,6 +233,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   }
   @include bp(desktop) {
     padding-right: 0;
+    padding-left: 0;
   }
   .huge-text-box {
     width: 100%;

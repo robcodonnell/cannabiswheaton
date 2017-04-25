@@ -138,7 +138,7 @@ html {
 
 //about-page
 .graphic {
-  background-color: #4b4e53;
+  background-color: $m-navy;
   .large-graphic {
     display: none;
     @include bp(desktop) {

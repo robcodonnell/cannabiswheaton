@@ -1,6 +1,6 @@
 footer {
   text-align: center;
-  background-color: $navy;
+  background-color: $m-navy;
   padding: 1.5rem 1rem;
   @include bp(tablet) {
     padding: 0;
@@ -41,7 +41,7 @@ footer {
       font-style: italic;
       text-decoration: none;
       font-size: 12px;
-      color: $m-grey;
+      color: #fff;
       font-weight: lighter;
       display: inline-block;
       margin: 0 15px;
@@ -57,7 +57,7 @@ footer {
   .footer-copyright {
     font-size: 10px;
     font-weight: lighter;
-    color: $m-grey;
+    color: #fff;
     padding-bottom: 1rem;
     @include bp(tablet) {
       padding-bottom: 0;
@@ -74,7 +74,7 @@ footer {
       font-size: 12px;
       padding: 0 1rem;
       text-decoration: none;
-      color: $m-grey;
+      color: #fff;
       &:hover {
         color: #fff;
       }
