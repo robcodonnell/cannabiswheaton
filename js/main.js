@@ -22,11 +22,6 @@ $('.para-box').waypoint(function () {
 },
 { offset: '80%' });
 
-$('.team-profiles').waypoint(function () {
-  $('.team-profiles').css('opacity', 1);
-},
-{ offset: '50%' });
-
 //smooth-scroll arrow
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
