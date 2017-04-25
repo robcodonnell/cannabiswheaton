@@ -221,7 +221,7 @@ html {
   clear: both;
   padding: 2rem 0;
   @include bp(tablet) {
-    padding: 4rem 4rem;
+    padding: 0 4rem;
   }
 }
 
