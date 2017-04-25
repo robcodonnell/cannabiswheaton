@@ -87,3 +87,18 @@ $('.grid-four').waypoint(function () {
 });
 },
 { offset: '70%' });
+
+$('.text-huge-green').waypoint(function () {
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1500,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+  });
+},
+{ offset: '90%' });

@@ -73,7 +73,7 @@ html {
       padding: 0 2rem;
     }
     @include bp(tablet) {
-      padding: 0 4rem;
+      padding: 0 6rem;
     }
     @include bp(desktop) {
       padding: 0 10rem;
@@ -124,14 +124,18 @@ html {
 .connect-hero {
   position: relative;
   overflow: hidden;
+  height: 500px;
   @include bp(tablet) {
-    height: 500px;
+    height: 700px;
   }
   .hero-img {
-    .img-flex {
-      @include bp(desktop) {
-        transform: translateY(-25%);
-      }
+    height: 500px;
+    padding: 2rem 0;
+    img {
+      height: 100%;
+    }
+    @include bp(tablet) {
+      height: 700px;
     }
   }
 }
@@ -178,8 +182,7 @@ html {
 .about-financial {
   @include clearfix;
   @include bp(desktop) {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding: 8rem 10rem;
   }
   .para-box {
     @include bp(tablet) {
@@ -325,7 +328,7 @@ html {
     padding: 2rem 4rem;
   }
   @include bp(desktop) {
-    padding: 4rem 10rem;
+    padding: 4rem 15rem;
     @include wrapper;
   }
 }

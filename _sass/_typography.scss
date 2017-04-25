@@ -9,6 +9,9 @@ $weiss: 'weissenhof_grotesk', sans-serif;
   text-transform: uppercase;
   @include bp(tablet) {
     font-size: 52px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .hero-sub {
@@ -99,9 +102,12 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     margin-bottom: 2rem;
     line-height: 1.4;
     @include bp(tablet) {
-      padding: 0 5rem 0 5rem;
+      padding: 0 8rem;
       margin-left: auto;
       margin-right: auto;
+    }
+    @include bp(desktop) {
+      padding: 0 12rem;
     }
     p {
       margin-bottom: 1.5rem;
