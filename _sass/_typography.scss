@@ -73,6 +73,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     padding: 2rem 10rem;
   }
   .para-header {
+    color: $green;
     font-size: 36px;
     font-weight: lighter;
     margin-bottom: 1rem;
@@ -85,6 +86,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
     }
   }
   .para-header-alt {
+    color: $green;
     font-size: 36px;
     font-weight: lighter;
     margin-bottom: 1rem;
@@ -127,11 +129,10 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 }
 
 .banner-header {
-  color: $navy;
+  color: $green;
   font-size: 28px;
   margin-bottom: 1rem;
   font-weight: lighter;
-  text-transform: uppercase;
   @include bp(tablet) {
     font-size: 30px;
   }
