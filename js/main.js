@@ -88,6 +88,7 @@ $('.grid-four').waypoint(function () {
 },
 { offset: '70%' });
 
+/*
 $('.text-huge-green').waypoint(function () {
   $('.count').each(function () {
     $(this).prop('Counter',0).animate({
@@ -102,3 +103,4 @@ $('.text-huge-green').waypoint(function () {
   });
 },
 { offset: '90%' });
+*/
