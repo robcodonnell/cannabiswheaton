@@ -1,0 +1,3 @@
+Sitemap: https://{{site.baseurl}}/sitemap.xml
+
+User-Agent: *

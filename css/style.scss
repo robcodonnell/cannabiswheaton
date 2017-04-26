@@ -215,8 +215,6 @@ html {
 }
 
 .about-grid {
-//  background-image: url({{site.baseurl}}/img/gbg.png);
-//  background-size: contain;
   @include wrapper;
   clear: both;
   padding: 2rem 0;
