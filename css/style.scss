@@ -239,7 +239,7 @@ html {
   .about-grid-header {
     font-size: 36px;
     text-align: center;
-    color: $navy;
+    color: $green;
     line-height: 1.1;
     @include bp(tablet) {
       font-size: 48px;
@@ -513,6 +513,15 @@ html {
 //Thank-you page
 
 .thanks-page {
+  height: 100vh;
+  padding-top: 30%;
+  @include bp(tablet) {
+    padding-top: 20%;
+  }
+}
+
+//404 page
+.error-page {
   height: 100vh;
   padding-top: 30%;
   @include bp(tablet) {
