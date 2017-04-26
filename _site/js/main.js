@@ -22,15 +22,17 @@ $('.para-box').waypoint(function () {
 },
 { offset: '80%' });
 
-$('.graphic').waypoint(function () {
-  $('.small-graphic').css('opacity', 1);
-  $('.med-graphic').css('opacity', 1);
-  $('.large-graphic').css('opacity', 1);
+$('.about-graphic').waypoint(function () {
+  $('.about-graphic > .small-graphic').css('opacity', 1);
+  $('.about-graphic > .med-graphic').css('opacity', 1);
+  $('.about-graphic > .large-graphic').css('opacity', 1);
 },
 { offset: '80%' });
 
-$('.text-huge-green').waypoint(function () {
-  $('.text-huge-green').css('opacity', 1);
+$('.numbers-graphic').waypoint(function () {
+  $('.numbers-graphic > .small-graphic').css('opacity', 1);
+  $('.numbers-graphic > .med-graphic').css('opacity', 1);
+  $('.numbers-graphic > .large-graphic').css('opacity', 1);
 },
 { offset: '80%' });
 
