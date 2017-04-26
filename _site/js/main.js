@@ -22,6 +22,23 @@ $('.para-box').waypoint(function () {
 },
 { offset: '80%' });
 
+$('.graphic').waypoint(function () {
+  $('.small-graphic').css('opacity', 1);
+  $('.med-graphic').css('opacity', 1);
+  $('.large-graphic').css('opacity', 1);
+},
+{ offset: '80%' });
+
+$('.text-huge-green').waypoint(function () {
+  $('.text-huge-green').css('opacity', 1);
+},
+{ offset: '80%' });
+
+$('.connect-hero').waypoint(function () {
+  $('.map-graphic').css('opacity', 1);
+},
+{ offset: '60%' });
+
 //smooth-scroll arrow
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

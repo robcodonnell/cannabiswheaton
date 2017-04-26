@@ -1,5 +1,6 @@
 @import "mixins";
-$weiss: 'weissenhof_grotesk', sans-serif;
+$weiss: 'weissenhof_grotesk_light', sans-serif;
+$weiss-m: 'weissenhof_grotesk_med', sans-serif;
 
 .hero-header {
   color: $green;
@@ -60,8 +61,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 .para-box {
   text-align: center;
   padding: 1rem;
-  opacity: 0;
-  transition: .7s all ease-in;
+  @include fade-in;
   @include clearfix;
   @include bp(phone) {
     padding: 2rem;
@@ -226,6 +226,7 @@ $weiss: 'weissenhof_grotesk', sans-serif;
 }
 
 .text-huge-green {
+  @include fade-in;
   @include clearfix;
   text-align: center;
   font-weight: lighter;

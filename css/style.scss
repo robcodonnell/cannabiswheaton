@@ -12,11 +12,20 @@
 @import "footer";
 
 @font-face {
-  font-family: 'weissenhof_grotesk';
+  font-family: 'weissenhof_grotesk_light';
   src: url('{{site.baseurl}}/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff2') format('woff2'),
        url('{{site.baseurl}}/indian_type_foundry_-_weissenhofgrotesk-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+    font-family: 'weissenhof_grotesk_med';
+    src: url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff2') format('woff2'),
+         url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
 }
 
 //global
@@ -128,6 +137,9 @@ html {
   @include bp(tablet) {
     height: 700px;
   }
+  .map-graphic {
+    @include fade-in;
+  }
   .hero-img {
     height: 500px;
     padding: 2rem 0;
@@ -144,6 +156,7 @@ html {
 .graphic {
   background-color: $m-navy;
   .large-graphic {
+    @include fade-in;
     display: none;
     @include bp(desktop) {
       display: block;
@@ -155,6 +168,7 @@ html {
     }
   }
   .med-graphic {
+    @include fade-in;
     display: none;
     @include bp(tablet) {
       display: block;
@@ -169,6 +183,7 @@ html {
     }
   }
   .small-graphic {
+    @include fade-in;
     display: block;
     @include bp(tablet) {
       display: none;
@@ -220,6 +235,15 @@ html {
   padding: 2rem 0;
   @include bp(tablet) {
     padding: 0 4rem;
+  }
+  .about-grid-header {
+    font-size: 36px;
+    text-align: center;
+    color: $navy;
+    line-height: 1.1;
+    @include bp(tablet) {
+      font-size: 48px;
+    }
   }
 }
 
@@ -316,8 +340,6 @@ html {
 
 .team-profiles {
   margin-bottom: 0;
-  opacity: 1;
-  transition: .7s all ease-in;
   padding: 2rem;
   @include bp(phone) {
     padding:  1rem 2rem;

@@ -1,3 +1,4 @@
+// button styles
 .button-dark {
   text-transform: uppercase;
   font-size: 12px;
@@ -36,6 +37,77 @@
   }
 }
 
+.svg-wrapper-one {
+  text-decoration: none;
+  height: 40px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  cursor: pointer;
+  .button-shape {
+    fill: transparent;
+    stroke-dasharray: 120 520;
+    stroke-dashoffset: -172;
+    stroke-width: 5px;
+    stroke: $green;
+  }
+  .button-text {
+    color: $navy;
+    font-family: $weiss;
+    font-size: 12px;
+    line-height: 32px;
+    position: relative;
+    top: -43px;
+  }
+}
+
+.svg-wrapper-two {
+  text-decoration: none;
+  height: 40px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  cursor: pointer;
+  .button-shape {
+    fill: transparent;
+    stroke-dasharray: 120 520;
+    stroke-dashoffset: -172;
+    stroke-width: 5px;
+    stroke: $green;
+  }
+  .button-text {
+    color: #fff;
+    font-family: $weiss;
+    font-size: 12px;
+    line-height: 32px;
+    position: relative;
+    top: -41px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -165;
+    stroke-width: 5px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper-one:hover .button-shape, .svg-wrapper-two:hover .button-shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+//images
 .img-flex {
   width: 100%;
 }
@@ -70,6 +142,7 @@
   }
 }
 
+//gifs
 .gif-one {
   display: none;
 }
