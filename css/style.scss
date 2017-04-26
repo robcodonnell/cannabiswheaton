@@ -194,6 +194,22 @@ html {
   }
 }
 
+.numbers-graphic {
+  @include bp(desktop) {
+    height: 400px;
+  }
+  .large-graphic {
+    @include bp(desktop) {
+      height: 400px;
+    }
+    .img-flex {
+      @include bp(desktop) {
+        height: 400px;
+      }
+    }
+  }
+}
+
 .about-financial {
   @include clearfix;
   @include bp(desktop) {
