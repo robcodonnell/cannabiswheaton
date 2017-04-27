@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://domain.ca</loc>
+    <loc>https://cannabiswheaton.com</loc>
   </url>
 
   <url>
-    <loc>https://domain.ca/about/</loc>
+    <loc>https://cannabiswheaton.com/about</loc>
+  </url>
+
+  <url>
+    <loc>https://cannabiswheaton.com/team</loc>
+  </url>
+
+  <url>
+    <loc>https://cannabiswheaton.com/contact</loc>
   </url>
 
 </urlset>

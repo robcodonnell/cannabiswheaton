@@ -194,18 +194,51 @@ html {
   }
 }
 
-.numbers-graphic {
-  @include bp(desktop) {
-    height: 400px;
-  }
-  .large-graphic {
+.number-graphics {
+  background-color: $m-navy;
+  .numbers {
+    padding: 2rem;
+    text-align: center;
+    @include bp(phone) {
+    }
+    @include bp(tablet) {
+      padding: 4rem;
+    }
     @include bp(desktop) {
+      @include wrapper;
+      padding: 4rem 6rem;
       height: 400px;
     }
-    .img-flex {
-      @include bp(desktop) {
-        height: 400px;
+  }
+  .count {
+    padding: 2rem 0;
+    position: relative;
+    @include bp(tablet) {
+      width: 50%;
+      float: left;
+    }
+    @include bp(desktop) {
+      width: 25%;
+    }
+    .number-counter {
+      color: $green;
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: -5px;
+      margin-bottom: 1rem;
+      .superscript {
+        font-size: 60px;
+        position: absolute;
+        top: 2rem;
       }
+    }
+    .number-context {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+    .underline {
+      width: 10%;
     }
   }
 }
