@@ -29,17 +29,30 @@ $('.about-graphic').waypoint(function () {
 },
 { offset: '80%' });
 
-$('.numbers-graphic').waypoint(function () {
-  $('.numbers-graphic > .small-graphic').css('opacity', 1);
-  $('.numbers-graphic > .med-graphic').css('opacity', 1);
-  $('.numbers-graphic > .large-graphic').css('opacity', 1);
-},
-{ offset: '80%' });
-
 $('.connect-hero').waypoint(function () {
   $('.map-graphic').css('opacity', 1);
 },
 { offset: '60%' });
+
+$('.clinic-count').waypoint(function () {
+  $('.clinic-count').css('opacity', 1);
+},
+{ offset: '80%' });
+
+$('.patient-count').waypoint(function () {
+  $('.patient-count').css('opacity', 1);
+},
+{ offset: '80%' });
+
+$('.partner-count').waypoint(function () {
+  $('.partner-count').css('opacity', 1);
+},
+{ offset: '80%' });
+
+$('.footage-count').waypoint(function () {
+  $('.footage-count').css('opacity', 1);
+},
+{ offset: '80%' });
 
 //smooth-scroll arrow
 $(function() {

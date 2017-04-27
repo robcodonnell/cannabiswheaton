@@ -211,6 +211,7 @@ html {
     }
   }
   .count {
+    @include fade-in;
     padding: 2rem 0;
     position: relative;
     @include bp(tablet) {
@@ -224,7 +225,7 @@ html {
       color: $green;
       font-size: 100px;
       font-weight: bold;
-      letter-spacing: -5px;
+      letter-spacing: -2px;
       margin-bottom: 1rem;
       .superscript {
         font-size: 60px;
@@ -234,11 +235,26 @@ html {
     }
     .number-context {
       color: #fff;
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 1rem;
     }
     .underline {
       width: 10%;
+    }
+  }
+  .patient-count {
+    @include bp(desktop) {
+      transition-delay: .2s;
+    }
+  }
+  .partner-count {
+    @include bp(desktop) {
+      transition-delay: .4s;
+    }
+  }
+  .footage-count {
+    @include bp(desktop) {
+      transition-delay: .6s;
     }
   }
 }
