@@ -70,6 +70,15 @@ $(function() {
   });
 });
 
+//form submit button
+$(document).ready(function(){
+   $(document).on("click",".submit-btn",function(){
+     var form = $(this).closest("form");
+     //console.log(form);
+     form.submit();
+   });
+});
+
 //gifs
 $(document).ready(function () {
   $(".gif-one").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1492722194/future-positioning_m7ghp1.gif?" + Math.random());

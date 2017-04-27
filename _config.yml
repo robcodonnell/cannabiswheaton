@@ -1,5 +1,5 @@
 permalink: pretty
-baseurl: "https://robcodonnell.github.io/cannabiswheaton"
+baseurl: ""
 sass:
   sass_dir: _sass
   style: compressed
