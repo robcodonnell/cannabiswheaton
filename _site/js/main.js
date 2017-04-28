@@ -124,19 +124,47 @@ $('.grid-four').waypoint(function () {
 },
 { offset: '70%' });
 
-/*
-$('.text-huge-green').waypoint(function () {
-  $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 1500,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
+// stock ticker
+
+$(function () {
+  $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
+    // create the chart
+    $('#container').highcharts('StockChart', {
+
+      chart: {
+        marginRight: 40
+      },
+
+      rangeSelector: {
+        inputEnabled: $('#container').width() > 480,
+        selected: 1
+      },
+
+      title: {
+        text: 'Highstock Current Price Indicator Demo'
+      },
+
+      series: [{
+        type: 'candlestick',
+        name: 'AAPL Stock Price',
+        data: data,
+        dataGrouping: {
+          units: [
+            ['week', // unit name
+            [1] // allowed multiples
+            ],
+            [
+              'month', [1, 2, 3, 4, 6]]
+          ]
         }
+      }],
+
+      yAxis: {
+        opposite: true,
+        labels: {
+            x: 20
+        }
+      }
     });
   });
-},
-{ offset: '90%' });
-*/
+});
