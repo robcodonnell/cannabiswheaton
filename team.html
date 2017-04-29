@@ -27,7 +27,7 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
 
 <section class="team-profiles">
   <h1 class="team-header">Management Team</h1>
-  {% for member in site.data.members %}
+  {% for member in site.data.management %}
     <div class="team-member">
       <div class="team-photo">
       <!--  <img class="img-flex" src="" alt="">-->
@@ -38,14 +38,14 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
     </div>
   {% endfor %}
   <h1 class="team-header">Advisory Board</h1>
-  <div class="team-member">
-    <div class="team-photo">
-    <!--  <img class="img-flex" src="" alt="">-->
+  {% for member in site.data.advisors %}
+    <div class="team-member">
+      <div class="team-photo">
+      <!--  <img class="img-flex" src="" alt="">-->
+      </div>
+      <h3 class="team-name">{{member.name}}</h3>
+      <p class="team-bio">{{member.bio}}</p>
     </div>
-    <h3 class="team-name">Hugo Alves</h3>
-    <p class="team-title">Strategic Advisor</p>
-    <p class="team-bio">
-      Hugo is a senior corporate and commercial partner at Bennett Jones LLP specializing in complex domestic and international transactions. He has advised industry-leading Canadian and foreign clients in connection with private mergers and acquisitions, financings, public procurements, outsourcing transactions, joint ventures and strategic alliances and has significant venture capital and private equity experience. Hugo is also Canada’s leading advisor in the cannabis industry representing a variety of global industry participants, including licensed producers, licensed producer applicants, licensed dealers, research and development labs, e-commerce platforms, seed-to-sale software developers, design and build firms, patient aggregators, equipment manufacturers and distributors, and cannabis branding companies. Hugo has acted as lead counsel or played a key role in a wide variety of transactions since the inception of the cannabis industry in Canada and is widely regarded as a Canadian cannabis industry pioneer.<br><br>Hugo speaks frequently as a keynote speaker at conferences on topics related to the cannabis industry, is a frequent author of cannabis industry articles and is an adjunct professor at Western Law where he teaches “Medical Marijuana: Law and Practice”, a course he co-designed and co-developed and the first of its kind in Canada.<br><br>Hugo obtained his B.A. from Carleton University, where he won the Senate Medal for Outstanding Academic Achievement and his J.D. from the University of Toronto.
-    </p>
-  </div>
+  {% endfor %}
+
 </section>
