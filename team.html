@@ -48,5 +48,17 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
       <p class="team-bio">{{member.bio}}</p>
     </div>
   {% endfor %}
+  <div class="board-members">
+    <h1 class="team-header">Members of the Board</h1>
+    {% for member in site.data.board %}
+      <div class="team-member">
+        <div class="team-photo">
+        <!--  <img class="img-flex" src="" alt="">-->
+        </div>
+        <h3 class="team-name">{{member.name}}</h3>
+        <p class="team-bio">{{member.bio}}</p>
+      </div>
+    {% endfor %}
+  </div>
 
 </section>
