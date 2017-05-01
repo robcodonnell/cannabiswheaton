@@ -121,6 +121,43 @@
 
 <!--<div id="container" style="height: 500px; min-width: 310px"></div>-->
 
+<div class="PaneBreadcrumb">
+  <div class="container clearfix">
+    <span class="BreadcrumbPaneDiv9">
+      <div id="_ctrl0_ctl75_divModuleContainer" class="BlankModuleContainer">
+
+    <div class="investorStock invNyse"><span class="StockDescription1">NYSE: SLW</span><span class="StockDescription2">$</span><span class="StockPrice">19.59</span><span class="StockChange down">--0.38</span> <span class="StockPChange down">--1.9%</span></div>
+<div class="investorStock invTsx"><span class="StockDescription1">TSX: SLW</span><span class="StockDescription2">$</span><span class="StockPrice">26.78</span><span class="StockChange down">--0.46</span> <span class="StockPChange down">--1.69%</span></div>
+<div class="pricingDelayed">
+	<span>Pricing delayed 20 minutes.</span>
+	<a href="/investors/stock-information/default.aspx" class="linkToStockInfo"><i class="q4i-rounded-rightchevon"></i></a>
+</div>
+
+<script type="text/javascript" src="https://q4implementation.s3.amazonaws.com/widgets/q4.stockQuote.1.0.0.min.js"></script>
+<script type="text/javascript">
+$('.investorStock.invTsx').stockQuote({
+	exchange: 'TSE',
+	symbol: 'SLW.CA',
+	useFullStockQuote: false,
+    stockTpl: (
+        '' +
+            '<span class="StockDescription1">TSX: SLW</span>'+
+            '<span class="StockDescription2">$</span>'+
+            '<span class="StockPrice"></span>'+
+            '<span class="StockChange "></span> '+
+            '<span class="StockPChange ">%</span>'+
+        ''
+	),
+	beforeRender:function(e,tpl){
+		tpl.items[0].sign = tpl.items[0].uod == 'up' ? '+' : '-';
+	}
+});
+        </script>
+      </div>
+    </span>
+  </div>
+</div>
+
 
   </main>
 
