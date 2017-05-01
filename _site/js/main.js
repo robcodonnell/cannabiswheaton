@@ -81,19 +81,19 @@ $(document).ready(function(){
 
 //gifs
 $(document).ready(function () {
-  $(".gif-one").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1492722194/future-positioning_m7ghp1.gif?" + Math.random());
+  $(".gif-one").attr("src", "https://cannabiswheaton.co/images/future-positioning.gif?" + Math.random());
 });
 
 $(document).ready(function () {
-  $(".gif-two").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1493059181/diversification_dgeb5l.gif?" + Math.random());
+  $(".gif-two").attr("src", "https://cannabiswheaton.co/images/diversification.gif?" + Math.random());
 });
 
 $(document).ready(function () {
-  $(".gif-three").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1493059181/upside_vs45lj.gif?" + Math.random());
+  $(".gif-three").attr("src", "https://cannabiswheaton.co/images/upside.gif?" + Math.random());
 });
 
 $(document).ready(function () {
-  $(".gif-four").attr("src", "https://res.cloudinary.com/dtbrkt2ur/image/upload/v1493059181/brands_gk0jpv.gif?" + Math.random());
+  $(".gif-four").attr("src", "https://cannabiswheaton.co/images/brands.gif?" + Math.random());
 });
 
 $('.grid-one').waypoint(function () {
