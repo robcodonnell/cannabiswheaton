@@ -39,10 +39,20 @@
     <section class="bg-video clearfix contact">
   <div class="video-text-overlay text-center">
     <h1 class="hero-header">Contact Us</h1>
-    <form class="clearfix" method="POST" action="http://formspree.io/info@cannabiswheaton.com">
-      <input type="text" name="fullname" placeholder="Your Full Name">
-      <input type="email" name="email" placeholder="Your Email Address">
-      <textarea maxlength="376" name="message" placeholder="Your Message"></textarea>
+    <form class="clearfix" method="POST" action="http://formspree.io/jeff@cannabiswheaton.com">
+      <div class="form-group">
+        <label for="formname">Your Full Name</label>
+        <input type="text" name="fullname" id="formname">
+      </div>
+      <div class="form-group">
+        <label for="formemail">Your Email Address</label>
+        <input type="email" name="email" id="formemail">
+        <input type="hidden" name="_cc" value="ian@cannabiswheaton.com" />
+      </div>
+      <div class="form-group form-text">
+        <label for="formmsg">Your Message</label>
+        <textarea id="formmsg" name="message"></textarea>
+      </div>
       <a href="javascript:void(0)" class="svg-wrapper-two submit-btn">
         <svg height="40" width="130" xmlns="http://www.w3.org/2000/svg">
           <rect class="button-shape" height="40" width="130" />
@@ -94,8 +104,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="/js/main.js"></script>
-  <script src="http://code.highcharts.com/stock/highstock.js"></script>
-  <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
-  <script src="https://rawgithub.com/RolandBanguiran/highstock-current-price-indicator/master/current-price-indicator.js"></script>
 </body>
 </html>
