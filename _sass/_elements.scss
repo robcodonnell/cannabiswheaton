@@ -38,6 +38,7 @@
 }
 
 .svg-wrapper-one {
+  display: block;
   text-decoration: none;
   height: 40px;
 	margin: 0 auto;
@@ -60,11 +61,14 @@
     line-height: 32px;
     position: relative;
     top: -43px;
+    width: 130px;
+    margin: 0 auto;
   }
 }
 
 .svg-wrapper-two {
   text-decoration: none;
+  display: block;
   height: 40px;
 	margin: 0 auto;
   position: relative;
@@ -86,6 +90,8 @@
     line-height: 32px;
     position: relative;
     top: -41px;
+    width: 130px;
+    margin: 0 auto;
   }
 }
 
