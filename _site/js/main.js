@@ -182,14 +182,18 @@ $('.grid-four').waypoint(function () {
   StockTicker.init();
 })();
 
-$(document).ready(function() {
-  if($('.change--positive').length){
-    $('.down-arrow').hide();
-  }
+$(document).ready(function(){
+   setTimeout(function(){
+    if($('.change--positive').length){
+      $('.down-arrow').css('display', 'block');
+    }
+  },300);
 });
 
-$(document).ready(function() {
-  if($('.change--negative').length){
-    $('.up-arrow').hide();
-  }
+$(document).ready(function(){
+   setTimeout(function(){
+    if($('.change--negative').length){
+      $('.up-arrow').css('display', 'block');
+    }
+  },300);
 });

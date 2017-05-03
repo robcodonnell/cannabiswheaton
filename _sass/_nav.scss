@@ -115,7 +115,7 @@ nav {
 	position: absolute;
 	text-align: right;
 	right: 4rem;
-	top: 20px;
+	top: 19px;
 	@include bp(tablet) {
 		right: 7rem;
 		top: 25px;
@@ -133,20 +133,24 @@ nav {
 	}
 	div {
 		display: inline-block;
-		font-size: 12px;
+		font-size: 9px;
 		font-family: $weiss;
 		color: $green;
+		@include bp(tablet) {
+			font-size: 12px;
+		}
 	}
 }
 
 .arrows {
 	div {
-		width: 13px;
+		display: none;
+		width: 10px;
 		position: absolute;
-		right: 9rem;
-		top: 32px;
+		right: 7.5rem;
+		top: 29px;
 		@include bp(tablet) {
-			top: 25px;
+			top: 24px;
 			right: 11.8rem;
 		}
 		@include bp(desktop) {

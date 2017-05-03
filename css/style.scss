@@ -129,7 +129,7 @@ html {
     	object-fit: cover;
     }
   }
-  .down-arrow {
+  .scroll-arrow {
     position: absolute;
     bottom: -2rem;
     left: 50%;
@@ -301,6 +301,9 @@ html {
   padding: 2rem 0;
   @include bp(tablet) {
     padding: 4rem 4rem 0 4rem;
+  }
+  @include bp(desktop) {
+    padding: 8rem 4rem;
   }
   .about-grid-header {
     padding: 2rem 1rem;
