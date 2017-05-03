@@ -130,7 +130,7 @@ $('.grid-four').waypoint(function () {
   var StockTicker = {
 
     config: {
-      symbol: 'KWF.V',
+      symbol: 'KWF.v',
       maxage: 1200,
       container: $('.stock-ticker')
     },

@@ -128,16 +128,17 @@ nav {
 		display: block;
 		@include bp(tablet) {
 			display: inline-block;
-			margin-left: 2rem;
+			margin-left: 1.5rem;
 		}
 	}
 	div {
 		display: inline-block;
 		font-size: 9px;
 		font-family: $weiss;
-		color: $green;
+		font-weight: bold;
+		color: #fff;
 		@include bp(tablet) {
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 }
@@ -151,11 +152,11 @@ nav {
 		top: 29px;
 		@include bp(tablet) {
 			top: 24px;
-			right: 11.8rem;
+			right: 12.5rem;
 		}
 		@include bp(desktop) {
 			top: 25px;
-			right: 18.8rem;
+			right: 19.5rem;
 		}
 	}
 }
