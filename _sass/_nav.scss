@@ -110,3 +110,48 @@ nav {
 .ham-bars {
 	width: 20px;
 }
+
+.stock-ticker {
+	position: absolute;
+	text-align: right;
+	right: 4rem;
+	top: 20px;
+	@include bp(tablet) {
+		right: 7rem;
+		top: 25px;
+	}
+	@include bp(desktop) {
+		right: 14rem;
+		top: 25px;
+	}
+	.change {
+		display: block;
+		@include bp(tablet) {
+			display: inline-block;
+			margin-left: 2rem;
+		}
+	}
+	div {
+		display: inline-block;
+		font-size: 12px;
+		font-family: $weiss;
+		color: $green;
+	}
+}
+
+.arrows {
+	div {
+		width: 13px;
+		position: absolute;
+		right: 9rem;
+		top: 32px;
+		@include bp(tablet) {
+			top: 25px;
+			right: 11.8rem;
+		}
+		@include bp(desktop) {
+			top: 25px;
+			right: 18.8rem;
+		}
+	}
+}

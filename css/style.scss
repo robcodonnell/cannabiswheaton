@@ -21,12 +21,11 @@
 }
 
 @font-face {
-    font-family: 'weissenhof_grotesk_med';
-    src: url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff2') format('woff2'),
-         url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: bold;
-
+  font-family: 'weissenhof_grotesk_med';
+  src: url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff2') format('woff2'),
+       url('indian_type_foundry_-_weissenhofgrotesk-medium-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
 }
 
 //global
@@ -70,8 +69,6 @@ html {
   margin-top: 2rem;
 }
 
-//hero banner
-
 //hide play button ios
 *::-webkit-media-controls-panel {
   display: none!important;
@@ -86,9 +83,7 @@ html {
   -webkit-appearance: none;
 }
 
-.ticker {
-  width: 100%;
-}
+//hero banner
 
 .bg-video {
   height: 100vh;

@@ -181,3 +181,15 @@ $('.grid-four').waypoint(function () {
 
   StockTicker.init();
 })();
+
+$(document).ready(function() {
+  if($('.change--positive').length){
+    $('.down-arrow').hide();
+  }
+});
+
+$(document).ready(function() {
+  if($('.change--negative').length){
+    $('.up-arrow').hide();
+  }
+});
