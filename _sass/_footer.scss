@@ -3,10 +3,10 @@ footer {
   background-color: $navy;
   padding: 1.5rem 1rem;
   position: relative;
-  height: 170px;
+  height: 250px;
   @include bp(tablet) {
     padding: 0;
-    height: 80px;
+    height: 150px;
   }
   .w-icon {
     position: absolute;
@@ -20,22 +20,27 @@ footer {
       }
     }
     @include bp(tablet) {
-      top: 1.2rem;
+      top: 2rem;
       margin-bottom: 0;
+      transform: translatex(0%);
+      left: 4rem;
     }
   }
   .soshmeeds {
     position: absolute;
     bottom: 1.5rem;
-    left: 50%;
+    right: 50%;
     width: 100%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     @include bp(tablet) {
-      left: 75%;
-      bottom: 2rem;
-      width: 47%;
+      right: 20rem;
+      width: 20%;
+      top: 2rem;
+      transform: translateX(0%);
     }
     @include bp(desktop) {
+      width: 10%;
+      right: 26rem;
     }
     .sosh-link {
       text-decoration: none;
@@ -47,7 +52,9 @@ footer {
         color: #fff;
       }
       @include bp(tablet) {
-
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
       }
     }
   }
@@ -56,20 +63,22 @@ footer {
     font-weight: lighter;
     color: $m-grey;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     top: 4rem;
     @include bp(tablet) {
       padding-bottom: 0;
-      top: 3.5rem;
+      top: 2rem;
+      right: 4rem;
+      transform: translateX(0%);
     }
     @include bp(desktop) {
     }
   }
   .footer-nav {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     bottom: 3.3rem;
     width: 100%;
     .footer-link {
@@ -81,15 +90,39 @@ footer {
         color: #fff;
       }
       @include bp(tablet) {
-
+        display: block;
+        margin-bottom: 5px;
       }
     }
     @include bp(tablet) {
-    left: 25%;
-    bottom: 2rem;
+    width: 20%;
+    right: 26rem;
+    top: 2rem;
+    text-align: left;
+    transform: translateX(0%);
     }
     @include bp(desktop) {
-
+      width: 10%;
+      right: 32rem;
+    }
+  }
+  .footer-inquiries {
+    color: $m-grey;
+    position: absolute;
+    top: 6rem;
+    right: 50%;
+    transform: translateX(50%);
+    @include bp(tablet) {
+      text-align: left;
+      top: 2rem;
+      right: 20rem;
+    }
+    @include bp(desktop) {
+      right: 21rem;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
     }
   }
 }

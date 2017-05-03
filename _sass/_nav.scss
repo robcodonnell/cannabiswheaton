@@ -128,7 +128,7 @@ nav {
 		display: block;
 		@include bp(tablet) {
 			display: inline-block;
-			margin-left: 3rem;
+			margin-left: 3.5rem;
 		}
 	}
 	div {
@@ -156,7 +156,7 @@ nav {
 		}
 		@include bp(desktop) {
 			top: 24px;
-			right: 320px;
+			right: 325px;
 		}
 	}
 }
