@@ -125,3 +125,59 @@ $('.grid-four').waypoint(function () {
 { offset: '70%' });
 
 // stock ticker
+(function(){
+
+  var StockTicker = {
+
+    config: {
+      symbol: 'KWF.V',
+      maxage: 1200,
+      container: $('.stock-ticker')
+    },
+
+    getData: function() {
+
+      var self = this;
+
+      var endpoint = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20("'+self.config.symbol+'")&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&_maxage='+self.config.maxage+'&callback=';
+
+      $.ajax({
+        url: endpoint,
+        type: 'GET',
+        dataType: 'json',
+      })
+      .done(function(response) {
+        self.mapResults(response.query.results.quote);
+      })
+      .fail(function() {
+        console.log("error");
+      })
+      .always(function() {
+        console.log("complete");
+      });
+
+    },
+
+    mapResults: function(response) {
+
+      if(parseFloat(response.BookValue) > 0) {
+        this.config.container.addClass('change--positive');
+      }
+      else {
+        this.config.container.addClass('change--negative');
+      }
+
+      this.config.container.find('.symbol').html(response.symbol);
+      this.config.container.find('.ask').html(response.Ask);
+      this.config.container.find('.change').html(response.BookValue+' ('+response.ChangeinPercent+')');
+
+    },
+
+    init: function() {
+      this.getData();
+    }
+
+  }
+
+  StockTicker.init();
+})();
