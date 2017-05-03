@@ -589,12 +589,31 @@ html {
         }
       }
       .submit-btn {
+        position: absolute;
+        right: 2rem;
+        top: 90%;
         @include bp(tablet) {
-          top: 100%;
-          left: 49%;
+          top: 88%;
+          right: 2.7rem;
           position: absolute;
           transform: translateX(-50%);
         }
+        @include bp(desktop) {
+          right: 6.5rem;
+        }
+      }
+    }
+    .inquiries {
+      color: #fff;
+      text-align: left;
+      width: 60%;
+      float: left;
+      @include bp(tablet) {
+        margin-left: 1rem;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 5px;
       }
     }
   }

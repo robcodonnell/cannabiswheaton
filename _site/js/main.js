@@ -185,7 +185,7 @@ $('.grid-four').waypoint(function () {
 $(document).ready(function(){
    setTimeout(function(){
     if($('.change--positive').length){
-      $('.down-arrow').css('display', 'block');
+      $('.up-arrow').css('display', 'block');
     }
   },300);
 });
@@ -193,7 +193,7 @@ $(document).ready(function(){
 $(document).ready(function(){
    setTimeout(function(){
     if($('.change--negative').length){
-      $('.up-arrow').css('display', 'block');
+      $('.down-arrow').css('display', 'block');
     }
   },300);
 });
