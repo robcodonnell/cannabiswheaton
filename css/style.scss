@@ -495,8 +495,11 @@ html {
 //contact page
 .contact {
   .video-text-overlay {
+    h1 {
+      margin-top: 2rem;
+    }
     form {
-      margin-top: 5rem;
+      margin-top: 1rem;
       ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: #fff;
         font-size: 12px;
@@ -512,6 +515,9 @@ html {
       :-moz-placeholder { /* Firefox 18- */
         color: #fff;
         font-size: 12px;
+      }
+      @include bp(tablet) {
+        margin-top: 3rem;
       }
       .form-group.form-text {
         @include bp(tablet) {
@@ -599,7 +605,7 @@ html {
           transform: translateX(-50%);
         }
         @include bp(desktop) {
-          right: 7rem;
+          right: 6.95rem;
         }
       }
     }
