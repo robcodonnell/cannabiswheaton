@@ -87,25 +87,14 @@ footer {
       @include bp(tablet) {
         display: inline-block;
         width: 28%;
-      }
-      .footer-copyright {
-        text-align: center;
-        float: left;
-        width: 100%;
-        margin-bottom: 5px;
-        font-size: 8px;
-        color: $m-grey;
-        @include bp(tablet) {
-          text-align: left;
-        }
-        @include bp(desktop) {
-          right: 10rem;
-        }
+        vertical-align: top;
       }
       .delay {
         text-align: center;
+        margin-top: 1rem;
         @include bp(tablet) {
           text-align: left;
+          margin-top: 0;
         }
         @include bp(desktop) {
           right: 10rem;
@@ -113,6 +102,20 @@ footer {
         p {
           font-size: 8px;
           color: $m-grey;
+        }
+      }
+      .footer-copyright {
+        text-align: center;
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+        font-size: 8px;
+        color: $m-grey;
+        @include bp(tablet) {
+          text-align: left;
+        }
+        @include bp(desktop) {
+          right: 10rem;
         }
       }
     }
