@@ -1,128 +1,120 @@
 footer {
-  text-align: center;
   background-color: $navy;
-  padding: 1.5rem 1rem;
   position: relative;
   height: 250px;
+  padding: 0 2rem;
   @include bp(tablet) {
     padding: 0;
-    height: 150px;
+    height: 128px;
   }
-  .w-icon {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1.5rem;
-    svg {
-      width: 55px;
-      @include bp(tablet) {
-        margin: 0;
-      }
-    }
+  .footer-wrap {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 4rem 0;
     @include bp(tablet) {
-      top: 2rem;
-      margin-bottom: 0;
-      transform: translatex(0%);
-      left: 4rem;
+      padding: 2rem 0;
+      max-width: 600px;
     }
-  }
-  .soshmeeds {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 50%;
-    width: 100%;
-    transform: translateX(50%);
-    @include bp(tablet) {
-      right: 20rem;
-      width: 20%;
-      top: 2rem;
-      transform: translateX(0%);
-    }
-    @include bp(desktop) {
-      width: 10%;
-      right: 26rem;
-    }
-    .sosh-link {
-      text-decoration: none;
-      font-size: 12px;
-      color: $m-grey;
-      font-weight: lighter;
-      padding: 0 1.5rem;
-      &:hover {
-        color: #fff;
-      }
+    .footer-nav {
+      display: inline-block;
+      width: 21%;
+      vertical-align: top;
       @include bp(tablet) {
-        text-align: left;
+        width: 15%;
+      }
+      @include bp(desktop) {
+
+      }
+      .footer-link {
+        font-size: 11px;
+        text-decoration: none;
+        color: $m-grey;
         display: block;
         margin-bottom: 5px;
+        &:hover {
+          color: #fff;
+        }
+        @include bp(tablet) {
+
+        }
       }
     }
-  }
-  .footer-copyright {
-    font-size: 8px;
-    font-weight: lighter;
-    color: $m-grey;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 4rem;
-    @include bp(tablet) {
-      padding-bottom: 0;
-      top: 2rem;
-      right: 4rem;
-      transform: translateX(0%);
-    }
-    @include bp(desktop) {
-    }
-  }
-  .footer-nav {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 3.3rem;
-    width: 100%;
-    .footer-link {
-      font-size: 12px;
-      padding: 0 1.5rem;
-      text-decoration: none;
-      color: $m-grey;
-      &:hover {
-        color: #fff;
-      }
+    .soshmeeds {
+      display: inline-block;
+      width: 21%;
+      vertical-align: top;
       @include bp(tablet) {
+        width: 20%;
+      }
+      @include bp(desktop) {
+
+      }
+      .sosh-link {
+        text-decoration: none;
+        font-size: 11px;
+        color: $m-grey;
         display: block;
         margin-bottom: 5px;
+        &:hover {
+          color: #fff;
+        }
+        @include bp(tablet) {
+
+        }
       }
     }
-    @include bp(tablet) {
-    width: 20%;
-    right: 26rem;
-    top: 2rem;
-    text-align: left;
-    transform: translateX(0%);
+    .footer-inquiries {
+      color: $m-grey;
+      display: inline-block;
+      width: 55%;
+      vertical-align: top;
+      @include bp(tablet) {
+        width: 35%;
+      }
+      @include bp(desktop) {
+        right: 27rem;
+      }
+      p {
+        font-size: 11px;
+        margin-bottom: 5px;
+        a {
+          text-decoration: none;
+          color: $m-grey;
+        }
+      }
     }
-    @include bp(desktop) {
-      width: 10%;
-      right: 32rem;
-    }
-  }
-  .footer-inquiries {
-    color: $m-grey;
-    position: absolute;
-    top: 6rem;
-    right: 50%;
-    transform: translateX(50%);
-    @include bp(tablet) {
-      text-align: left;
-      top: 2rem;
-      right: 20rem;
-    }
-    @include bp(desktop) {
-      right: 21rem;
-    }
-    p {
-      font-size: 12px;
-      margin-bottom: 5px;
+    .footer-sm {
+      @include bp(tablet) {
+        display: inline-block;
+        width: 28%;
+      }
+      .footer-copyright {
+        text-align: center;
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 8px;
+        color: $m-grey;
+        @include bp(tablet) {
+          text-align: left;
+        }
+        @include bp(desktop) {
+          right: 10rem;
+        }
+      }
+      .delay {
+        text-align: center;
+        @include bp(tablet) {
+          text-align: left;
+        }
+        @include bp(desktop) {
+          right: 10rem;
+        }
+        p {
+          font-size: 8px;
+          color: $m-grey;
+        }
+      }
     }
   }
 }
