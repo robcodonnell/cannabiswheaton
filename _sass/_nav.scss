@@ -111,7 +111,7 @@ nav {
 	width: 20px;
 }
 
-.stock-ticker {
+.change--positive {
 	position: absolute;
 	text-align: right;
 	right: 4rem;
@@ -126,9 +126,15 @@ nav {
 	}
 	.change {
 		display: block;
+		background-image: url('/svgs/arrow-up.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		padding-left: 1.3rem;
 		@include bp(tablet) {
 			display: inline-block;
-			margin-left: 3.5rem;
+			padding-left: 2rem;
+			margin-left: 1rem;
 		}
 	}
 	div {
@@ -146,20 +152,43 @@ nav {
 	}
 }
 
-.arrows {
-	div {
-		display: none;
-		width: 10px;
-		position: absolute;
-		right: 8.3rem;
-		top: 29px;
+.change--negative {
+	position: absolute;
+	text-align: right;
+	right: 4rem;
+	top: 19px;
+	@include bp(tablet) {
+		right: 7rem;
+		top: 25px;
+	}
+	@include bp(desktop) {
+		right: 14rem;
+		top: 25px;
+	}
+	.change {
+		display: block;
+		background-image: url('/svgs/arrow-down.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		padding-left: 1.3rem;
 		@include bp(tablet) {
-			top: 24px;
-			right: 13rem;
+			display: inline-block;
+			padding-left: 2rem;
+			margin-left: 1rem;
 		}
-		@include bp(desktop) {
-			top: 24px;
-			right: 325px;
+	}
+	div {
+		display: inline-block;
+		font-size: 9px;
+		font-family: $weiss;
+		font-weight: bold;
+		color: #fff;
+		@include bp(tablet) {
+			font-size: 14px;
 		}
+	}
+	.asterisk {
+		margin-left: -3px;
 	}
 }

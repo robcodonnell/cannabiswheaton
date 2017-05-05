@@ -156,13 +156,22 @@ html {
     @include fade-in;
   }
   .hero-img {
+    background-color: #4b4e53;
+    text-align: center;
     height: 500px;
-    padding: 2rem 0;
+    padding: 5rem 2rem;
     img {
-      height: 100%;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      @include bp(tablet) {
+        height: 600px;
+        width: auto;
+      }
     }
     @include bp(tablet) {
       height: 700px;
+      padding: 3rem 2rem;
     }
   }
 }

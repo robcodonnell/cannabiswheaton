@@ -118,22 +118,6 @@
   width: 100%;
 }
 
-.hero-img {
-  height: 300px;
-  background-color: #4b4e53;
-  text-align: center;
-  @include bp(tablet) {
-    height: 500px;
-  }
-  img {
-    height: 300px;
-    margin: 0 auto;
-    @include bp(tablet) {
-      height: 500px;
-    }
-  }
-}
-
 .img-banner {
   height: 130%;
   transform: translateX(-16%);
