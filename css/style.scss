@@ -233,6 +233,13 @@ html {
       padding: 4rem 6rem;
       height: 400px;
     }
+    .number-aster {
+      color: $l-grey;
+      font-size: 10px;
+      margin-bottom: 1rem;
+      padding-top: 2rem;
+      clear: both;
+    }
   }
   .count {
     @include fade-in;
