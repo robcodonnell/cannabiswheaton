@@ -130,7 +130,7 @@ $('.grid-four').waypoint(function () {
   var StockTicker = {
 
     config: {
-      symbol: 'KWF.v',
+      symbol: 'CBW.v',
       maxage: 300,
       container: $('.stock-ticker')
     },
@@ -168,8 +168,8 @@ $('.grid-four').waypoint(function () {
       }
 
       this.config.container.find('.symbol').html(response.symbol);
-      this.config.container.find('.ask').html(response.Ask);
-      this.config.container.find('.change').html(response.BookValue+' ('+response.ChangeinPercent+')');
+//      this.config.container.find('.ask').html(response.Ask);
+//      this.config.container.find('.change').html(response.BookValue+' ('+response.ChangeinPercent+')');
 
     },
 
