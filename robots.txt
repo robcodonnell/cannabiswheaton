@@ -1,3 +1,3 @@
-Sitemap: {{site.baseurl}}/sitemap.xml
+Sitemap: http://cannabiswheaton.co/sitemap.xml
 
 User-Agent: *
