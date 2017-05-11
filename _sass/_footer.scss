@@ -56,7 +56,6 @@ footer {
       vertical-align: top;
       @include bp(tablet) {
         width: 25%;
-        text-align: left;
         margin-top: 5px;
         display: inline-block;
         margin-right: 45px;
@@ -141,6 +140,125 @@ footer {
           color: $m-grey;
           @include bp(tablet) {
             text-align: left;
+          }
+          @include bp(desktop) {
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//alt footer for investors
+
+
+
+#footer-alt {
+  background-color: $navy;
+  text-align: center;
+  position: relative;
+  height: 170px;
+  padding: 0 2rem;
+  @include bp(tablet) {
+
+  }
+  .footer-wrap {
+    max-width: 380px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+    @include bp(tablet) {
+      padding: 2rem 0 1rem 0;
+      max-width: 600px;
+    }
+    .footer-alt-nav {
+      display: block;
+      width: 100%;
+      vertical-align: top;
+      margin-bottom: 15px;
+      text-align: center;
+      @include bp(tablet) {
+
+      }
+      @include bp(desktop) {
+
+      }
+      .footer-link {
+        font-size: 11px;
+        vertical-align: top;
+        text-decoration: none;
+        color: $m-grey;
+        display: inline-block;
+        margin: 5px 10px;
+        &:hover {
+          color: #fff;
+        }
+        @include bp(tablet) {
+        }
+      }
+    }
+    .soshmeeds {
+      display: block;
+      width: 100%;
+      vertical-align: top;
+      margin-bottom: 15px;
+      @include bp(tablet) {
+
+      }
+      @include bp(desktop) {
+
+      }
+      .sosh-link {
+        text-decoration: none;
+        font-size: 11px;
+        color: $m-grey;
+        width: 25px;
+        display: inline-block;
+        margin: 0 8px 5px 8px;
+        &:hover {
+          color: #fff;
+        }
+        @include bp(tablet) {
+
+        }
+      }
+    }
+    .footer-alt-group {
+      text-align: center;
+      vertical-align: top;
+      @include bp(tablet) {
+        display: inline-block;
+      }
+      .footer-sm {
+        @include bp(tablet) {
+          display: inline-block;
+          width: 100%;
+          vertical-align: top;
+          margin-left: 8px;
+          text-align: center;
+        }
+        .delay {
+          text-align: center;
+          @include bp(tablet) {
+            margin-top: 0;
+          }
+          @include bp(desktop) {
+          }
+          p {
+            font-size: 8px;
+            color: $m-grey;
+          }
+        }
+        .footer-copyright {
+          text-align: center;
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+          font-size: 8px;
+          color: $m-grey;
+          @include bp(tablet) {
           }
           @include bp(desktop) {
           }

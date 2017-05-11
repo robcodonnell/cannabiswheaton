@@ -1,0 +1,18 @@
+{% include head.html %}
+
+<body>
+
+  {% include nav.html %}
+
+  <main>
+
+    {{ content }}
+
+  </main>
+
+  {% include footer-alt.html %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="{{site.baseurl}}/js/main.js"></script>
+</body>
+</html>

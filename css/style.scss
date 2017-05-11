@@ -659,3 +659,45 @@ html {
     padding-top: 20%;
   }
 }
+
+//investors page
+.investor-deck {
+  height: 500px;
+  background-color: $m-navy;
+  background-image: url(/svgs/map3.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .para-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    h2 {
+      a {
+        text-decoration: none;
+        color: $green;
+      }
+    }
+  }
+}
+
+.pre-footer {
+  .investor-relations {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 14px;
+    color: $m-grey;
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      color: $m-grey;
+      margin-bottom: 5px;
+      text-decoration: none;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
