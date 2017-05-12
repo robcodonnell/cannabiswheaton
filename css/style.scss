@@ -662,13 +662,21 @@ html {
 
 //investors page
 .investor-deck {
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover .text-section {
+      opacity: .5;
+    }
+  }
   height: 500px;
   background-color: $m-navy;
-  background-image: url(/svgs/map3.svg);
-  background-size: contain;
+  background-image: url('http://cannabiswheaton.co/images/cw-website-investors-dark.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   .text-section {
+    transition: all .3s ease-in;
     height: 100%;
     position: relative;
     .para-box {
@@ -678,10 +686,7 @@ html {
       left: 50%;
       transform: translate(-50%,-50%);
       h2 {
-        a {
-          text-decoration: none;
-          color: $green;
-        }
+        color: #fff;
       }
     }
   }
