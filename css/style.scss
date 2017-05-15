@@ -661,52 +661,61 @@ html {
 }
 
 //investors page
-.investor-deck {
-  a {
+.investor-page {
+  padding-top: 70px;
+  .bg-video {
+    height: 600px;
+  }
+  .hero-header {
+    text-transform: none;
+  }
+  .hero-sub {
+    color: $navy;
+  }
+  .deck-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
     text-decoration: none;
     color: #fff;
-    &:hover .text-section {
-      opacity: .5;
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .9;
     }
-  }
-  height: 500px;
-  background-color: $m-navy;
-  background-image: url('http://cannabiswheaton.co/images/cw-website-investors-dark.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  .text-section {
-    transition: all .3s ease-in;
-    height: 100%;
-    position: relative;
-    .para-box {
-      position: absolute;
+    h2 {
+      @include hero-text;
       width: 80%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      h2 {
-        color: #fff;
+      font-size: 36px;
+      text-align: center;
+      @include bp(tablet) {
+        font-size: 48px;
+      }
+    }
+    img {
+      width: 200%;
+      transform: translateX(-25%);
+      @include bp(tablet) {
+        width: 100%;
+        transform: translateY(0%);
       }
     }
   }
-}
-
-.pre-footer {
-  .investor-relations {
-    padding: 4rem 0;
-    text-align: center;
-    font-size: 14px;
-    color: $m-grey;
-    p {
-      margin-bottom: 5px;
-    }
-    a {
+  .pre-footer {
+    .investor-relations {
+      padding: 4rem 0;
+      text-align: center;
+      font-size: 14px;
       color: $m-grey;
-      margin-bottom: 5px;
-      text-decoration: none;
-      &:hover {
-        color: $green;
+      p {
+        margin-bottom: 5px;
+      }
+      a {
+        color: $m-grey;
+        margin-bottom: 5px;
+        text-decoration: none;
+        &:hover {
+          color: $green;
+        }
       }
     }
   }
