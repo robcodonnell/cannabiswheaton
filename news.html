@@ -1,0 +1,49 @@
+---
+layout: default
+title: Press and News Releases
+titlaAfter: The World’s First Cannabis Streaming Company
+meta:
+---
+
+<div class="subpage-header para-box way">
+  <h1 class="para-header-alt">Press and News Releases</h1>
+  <div class="para-body">
+    <p class="pad-b">We are not interested in creating a monopoly, We are interested in creating value for our partners and the industry. Our model allows streaming partners to get to market quicker, exceed their growth potential and achieve greater success.</p>
+  </div>
+</div>
+
+<div class="subpage-body wrapper">
+  <div class="article-list">
+    <h2 class="list-header">Latest Press</h2>
+    <ul>
+      {% for article in site.data.press %}
+        <li>
+          <p class="article-small">{{article.date}}</p>
+          <p class="article-small">{{article.source}}</p>
+          <p class="article-large">
+            <a href="{{article.link}}">{{article.headline}}</a>
+          </p>
+          <p class="article-med">{{article.subhead}}</p>
+          <a class="article-link text-green" href="{{article.link}}">Read Article</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="article-list">
+    <h2 class="list-header">Latest News Releases</h2>
+    <ul>
+      {% for article in site.data.press %}
+        <li>
+          <p class="article-small">{{article.date}}</p>
+          <p class="article-small">{{article.source}}</p>
+          <p class="article-large">
+            <a href="{{article.link}}">{{article.headline}}</a>
+          </p>
+          <p class="article-med">{{article.subhead}}</p>
+          <a class="article-link text-green" href="{{article.link}}">Read Article</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
