@@ -1,0 +1,91 @@
+.team-name {
+ color: $green;
+ margin-bottom: .5em;
+}
+
+.team-title {
+ font-size: 80%;
+}
+
+.team-header {
+  padding: 2rem 1rem 0 1rem;
+  font-size: 36px;
+  text-align: center;
+  color: $green;
+  line-height: 1.1;
+  margin-top: 2rem;
+  @include bp(tablet) {
+    font-size: 48px;
+    padding: 0 2rem;
+  }
+}
+
+.team-profiles {
+  margin-bottom: 0;
+  padding: 2rem;
+  @include bp(phone) {
+    padding:  1rem 2rem;
+  }
+  @include bp(tablet) {
+    padding: 2rem 4rem;
+  }
+  @include bp(desktop) {
+    padding: 4rem 15rem;
+    @include wrapper;
+  }
+}
+.team-member {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+
+  .team-photo {
+    margin-bottom: 1rem;
+    width: 100%;
+    @include bp(phone) {
+      width: 50%;
+      margin-right: 1.5rem;
+      float: left;
+    }
+     @include bp(tablet) {
+      width: 20%;
+      margin-right: 2.2rem;
+    }
+    @include bp(desktop) {
+      margin-right: 2rem;
+     }
+  }
+  .team-name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    @include bp(phone) {
+      font-size: 1.9rem;
+      padding-top: 4rem;
+    }
+    @include bp(tablet) {
+      padding-top: 2rem;
+    }
+  }
+  .team-title {
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .team-bio {
+    line-height: 1.6;
+    font-size: 0.8rem;
+    @include bp(phone) {
+      clear: both;
+    }
+    @include bp(tablet) {
+      clear: none;
+      width: 100%;
+      float: left;
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      column-gap: 1.5rem;
+    }
+  }
+}

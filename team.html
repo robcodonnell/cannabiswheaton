@@ -4,36 +4,22 @@ title: Team
 titleAfter: The World’s First Cannabis Streaming Company
 meta: Our team is comprised of industry first-movers, visionaries and experts, dedicated to creating value for our partners and the cannabis industry.
 ---
-<section class="bg-video clearfix">
-  <div class="video-text-overlay text-center">
-    <h1 class="hero-header way">A dedicated team for growth</h1>
-    <h2 class="hero-sub">Our management team is comprised of industry first-movers, visionaries and experts, dedicated to creating value for our partners and the cannabis industry.
-    </h2>
-  </div>
 
-  <div class="video-dots">
+<div class="subpage-header para-box">
+  <h1 class="para-header-alt">A dedicated team for growth</h1>
+  <div class="para-body">
+    <p class="pad-b">Our management team is comprised of industry first-movers, visionaries and experts, dedicated to creating value for our partners and the cannabis industry.</p>
   </div>
-
-  <div class="fullscreen-bg">
-    <video autoplay='true' loop='true' muted='true' loop muted autoplay poster="http://cannabiswheaton.co/images/poster.jpg" class="fullscreen-bg__video">
-        <source src="http://cannabiswheaton.co/images/bg-vid.mp4">
-    </video>
-  </div>
-  <a class="scroll-arrow" href="#smooth" id="smooth">
-    <svg class="arrow">
-      <path class="a1" d="M0 40 L30 72 L60 40"></path>
-    </svg>
-  </a>
-</section>
+</div>
 
 <section class="team-profiles">
   <h1 class="team-header">Management Team</h1>
   {% for member in site.data.management %}
     <div class="team-member">
-      <div class="team-photo">
-      <!--  <img class="img-flex" src="" alt="">-->
-      </div>
-      <h3 class="team-name">{{member.name}}</h3>
+      <!--<div class="team-photo">
+        <img class="img-flex" src="" alt="">
+      </div>-->
+      <h3 class="subpage-text-header text-green">{{member.name}}</h3>
       <p class="team-title">{{member.title}}</p>
       <p class="team-bio">{{member.bio}}</p>
     </div>
@@ -41,10 +27,10 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
   <h1 class="team-header">Strategic Advisors</h1>
   {% for member in site.data.advisors %}
     <div class="team-member">
-      <div class="team-photo">
-      <!--  <img class="img-flex" src="" alt="">-->
-      </div>
-      <h3 class="team-name">{{member.name}}</h3>
+      <!--<div class="team-photo">
+        <img class="img-flex" src="" alt="">
+      </div>-->
+      <h3 class="subpage-text-header text-green">{{member.name}}</h3>
       <p class="team-title">{{member.title}}</p>
       <p class="team-bio">{{member.bio}}</p>
     </div>
@@ -53,10 +39,10 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
     <h1 class="team-header">Board of Directors</h1>
     {% for member in site.data.board %}
       <div class="team-member">
-        <div class="team-photo">
-        <!--  <img class="img-flex" src="" alt="">-->
-        </div>
-        <h3 class="team-name">{{member.name}}</h3>
+        <!--<div class="team-photo">
+          <img class="img-flex" src="" alt="">
+        </div>-->
+        <h3 class="subpage-text-header text-green">{{member.name}}</h3>
         <p class="team-bio">{{member.bio}}</p>
       </div>
     {% endfor %}

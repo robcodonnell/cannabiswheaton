@@ -1,0 +1,238 @@
+.graphic {
+  background-color: $m-navy;
+  .large-graphic {
+    @include fade-in;
+    display: none;
+    @include bp(desktop) {
+      display: block;
+    }
+    .img-flex {
+      @include bp(desktop) {
+        height: 600px;
+      }
+    }
+  }
+  .med-graphic {
+    @include fade-in;
+    display: none;
+    @include bp(tablet) {
+      display: block;
+    }
+    @include bp(desktop) {
+      display: none;
+    }
+    .img-flex {
+      @include bp(desktop) {
+        height: 600px;
+      }
+    }
+  }
+  .small-graphic {
+    @include fade-in;
+    display: block;
+    @include bp(tablet) {
+      display: none;
+    }
+  }
+  @include bp(desktop) {
+    height: 600px;
+  }
+}
+
+.number-graphics {
+  background-color: $m-navy;
+  .numbers {
+    padding: 2rem;
+    text-align: center;
+    @include bp(phone) {
+    }
+    @include bp(tablet) {
+      padding: 4rem;
+    }
+    @include bp(desktop) {
+      @include wrapper;
+      padding: 4rem 6rem;
+      height: 400px;
+    }
+    .number-aster {
+      color: $l-grey;
+      font-size: 10px;
+      margin-bottom: 1rem;
+      padding-top: 2rem;
+      clear: both;
+      line-height: 1.5;
+    }
+  }
+  .count {
+    @include fade-in;
+    padding: 2rem 0;
+    position: relative;
+    @include bp(tablet) {
+      width: 50%;
+      float: left;
+    }
+    @include bp(desktop) {
+      width: 25%;
+    }
+    .number-counter {
+      color: $green;
+      font-size: 100px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      margin-bottom: 1rem;
+      .superscript {
+        font-size: 60px;
+        position: absolute;
+        top: 2rem;
+      }
+    }
+    .number-context {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+    .underline {
+      width: 10%;
+    }
+  }
+  .patient-count {
+    @include bp(desktop) {
+      transition-delay: .2s;
+    }
+  }
+  .partner-count {
+    @include bp(desktop) {
+      transition-delay: .4s;
+    }
+  }
+  .footage-count {
+    @include bp(desktop) {
+      transition-delay: .6s;
+    }
+  }
+}
+
+.about-financial {
+  @include clearfix;
+  @include bp(desktop) {
+    padding: 8rem 10rem;
+  }
+  .para-box {
+    @include bp(tablet) {
+      width: 100%;
+    }
+    @include bp(desktop) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .para-body-alt {
+    @include bp(tablet) {
+      width: 100%;
+    }
+  }
+}
+
+.about-grid {
+  @include wrapper;
+  clear: both;
+  padding: 2rem 0;
+  @include bp(tablet) {
+    padding: 4rem 4rem 0 4rem;
+  }
+  @include bp(desktop) {
+    padding: 8rem 4rem;
+  }
+  .about-grid-header {
+    padding: 2rem 1rem;
+    font-size: 36px;
+    text-align: center;
+    color: $green;
+    line-height: 1.1;
+    @include bp(tablet) {
+      font-size: 48px;
+      padding: 0 2rem;
+    }
+  }
+}
+
+.banner-img-left {
+  height: 220px;
+  img {
+    width: 220px;
+    margin: 0 auto;
+    @include bp(tablet) {
+      width: 250px;
+      padding: 1rem 0 0 0;
+      margin: 0 auto;
+    }
+    @include bp(desktop) {
+      padding: 0 0 2rem 2rem;
+      width: 300px;
+    }
+  }
+  @include bp(tablet) {
+    transform: translateY(20%);
+    height: auto;
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    z-index: 1;
+    overflow: hidden;
+  }
+  @include bp(desktop) {
+    width: 35%;
+    margin-left: 5rem;
+  }
+}
+
+.banner-img-right {
+  height: 220px;
+  img {
+    width: 220px;
+    margin: 0 auto;
+    @include bp(tablet) {
+      width: 250px;
+      padding: 1rem 0 0 0;
+      margin: 0 auto;
+    }
+    @include bp(desktop) {
+      padding: 0 2rem 2rem 0;
+      width: 300px;
+    }
+  }
+  @include bp(tablet) {
+    transform: translateY(20%);
+    height: auto;
+    width: 45%;
+    margin-left: 5%;
+    float: right;
+    z-index: 1;
+    overflow: hidden;
+  }
+  @include bp(desktop) {
+    width: 35%;
+    margin-right: 5rem;
+  }
+}
+
+.banner-img-center {
+  height: 200px;
+  img {
+    height: 100%;
+    margin: 0 auto;
+    @include bp(tablet) {
+      width: 100%;
+      margin: 0;
+    }
+    @include bp(desktop) {
+      width: 100%;
+    }
+  }
+  @include bp(tablet) {
+    width: 20%;
+    z-index: 1;
+    margin: 0 auto;
+    height: auto;
+  }
+}

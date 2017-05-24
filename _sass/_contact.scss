@@ -1,0 +1,131 @@
+.contact {
+  .video-text-overlay {
+    h1 {
+      margin-top: 6rem;
+    }
+    form {
+      margin-top: 1rem;
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+        font-size: 12px;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: #fff;
+        font-size: 12px;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: #fff;
+        font-size: 12px;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #fff;
+        font-size: 12px;
+      }
+      @include bp(tablet) {
+        margin-top: 3rem;
+      }
+      .form-group.form-text {
+        @include bp(tablet) {
+          width: 100%;
+          padding-right: 2rem;
+        }
+      }
+      .form-group {
+        position: relative;
+        @include clearfix;
+        @include bp(tablet) {
+          width: calc(50% - 2rem);
+          float: left;
+          margin: 0 1rem;
+        }
+        label {
+          position: absolute;
+          color: #fff;
+          font-size: 12px;
+          left: 1rem;
+          top: 1rem;
+        }
+        input {
+          width: 100%;
+          display: block;
+          outline: none;
+          margin-bottom: 1rem;
+          padding: 0 0 0 1rem;
+          height: 70px;
+          border: none;
+          border: 1px solid #fff;
+          background-color: transparent;
+          font-family: $weiss;
+          color: #fff;
+          font-size: 16px;
+          &:focus {
+            border: 1px solid $green;
+          }
+          &:focus + label {
+            color: $green;
+          }
+          @include bp(tablet) {
+            height: 100px;
+            margin-right: 2rem;
+          }
+        }
+        input:nth-child(2) {
+          @include bp(tablet) {
+            clear: both;
+          }
+        }
+        textarea {
+          resize: none;
+          width: 100%;
+          height: 150px;
+          padding: 2.5rem 1rem 0 1rem;
+          border: none;
+          outline: none;
+          border: 1px solid #fff;
+          background-color: transparent;
+          font-family: $weiss;
+          color: #fff;
+          font-size: 16px;
+          margin-bottom: 2rem;
+          &:focus {
+            border: 1px solid $green;
+          }
+          &:focus + label {
+            color: $green;
+          }
+          @include bp(tablet) {
+            @include clearfix;
+            height: calc(200px + 1rem);
+          }
+        }
+      }
+      .submit-btn {
+        position: absolute;
+        right: 2rem;
+        top: 90%;
+        @include bp(tablet) {
+          top: 88%;
+          right: 2.9rem;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+        @include bp(desktop) {
+          right: 6.95rem;
+        }
+      }
+    }
+    .inquiries {
+      color: #fff;
+      text-align: left;
+      width: 60%;
+      float: left;
+      @include bp(tablet) {
+        margin-left: 1rem;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

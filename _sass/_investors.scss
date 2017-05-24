@@ -1,0 +1,59 @@
+.investor-page {
+  padding-top: 70px;
+  .bg-video {
+    height: 600px;
+  }
+  .hero-header {
+    text-transform: none;
+  }
+  .hero-sub {
+    color: $navy;
+  }
+  .deck-link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .9;
+    }
+    h2 {
+      @include hero-text;
+      width: 80%;
+      font-size: 36px;
+      text-align: center;
+      @include bp(tablet) {
+        font-size: 48px;
+      }
+    }
+    img {
+      width: 200%;
+      transform: translateX(-25%);
+      @include bp(tablet) {
+        width: 100%;
+        transform: translateY(0%);
+      }
+    }
+  }
+  .pre-footer {
+    .investor-relations {
+      padding: 4rem 0;
+      text-align: center;
+      font-size: 14px;
+      color: $m-grey;
+      p {
+        margin-bottom: 5px;
+      }
+      a {
+        color: $m-grey;
+        margin-bottom: 5px;
+        text-decoration: none;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}
