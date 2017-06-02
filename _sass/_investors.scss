@@ -10,6 +10,7 @@
     color: $navy;
   }
   .deck-link {
+    cursor: pointer;
     display: block;
     overflow: hidden;
     position: relative;
@@ -37,23 +38,21 @@
       }
     }
   }
-  .pre-footer {
-    .investor-relations {
-      padding: 4rem 0;
-      text-align: center;
-      font-size: 14px;
-      color: $m-grey;
-      p {
-        margin-bottom: 5px;
-      }
-      a {
-        color: $m-grey;
-        margin-bottom: 5px;
-        text-decoration: none;
-        &:hover {
-          color: $green;
-        }
-      }
+}
+
+.news-page {
+  margin-top: 3rem;
+  .para-header-alt {
+    padding: 0 2rem;
+    text-align: center;
+    color: $green;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    @include bp(tablet) {
+      font-size: 48px;
+      width: 100%;
     }
   }
 }

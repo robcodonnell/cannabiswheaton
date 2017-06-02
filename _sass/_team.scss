@@ -8,12 +8,11 @@
 }
 
 .team-header {
-  padding: 2rem 1rem 0 1rem;
   font-size: 36px;
+  margin-bottom: 2rem;
   text-align: center;
   color: $green;
   line-height: 1.1;
-  margin-top: 2rem;
   @include bp(tablet) {
     font-size: 48px;
     padding: 0 2rem;
@@ -22,12 +21,9 @@
 
 .team-profiles {
   margin-bottom: 0;
-  padding: 2rem;
-  @include bp(phone) {
-    padding:  1rem 2rem;
-  }
+  padding: 3rem 2rem 2rem 2rem;
   @include bp(tablet) {
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
   }
   @include bp(desktop) {
     padding: 4rem 15rem;
