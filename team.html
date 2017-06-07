@@ -21,20 +21,10 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
       </div>-->
       <h3 class="subpage-text-header text-green">{{member.name}}</h3>
       <p class="team-title">{{member.title}}</p>
-      <p class="team-bio">{{member.bio}}</p>
+      <p class="team-bio">{{member.bio}}<br><br><i class="text-green italic">{{member.itl}}</i></p>
     </div>
   {% endfor %}
-  <h1 class="team-header">Strategic Advisors</h1>
-  {% for member in site.data.advisors %}
-    <div class="team-member">
-      <!--<div class="team-photo">
-        <img class="img-flex" src="" alt="">
-      </div>-->
-      <h3 class="subpage-text-header text-green">{{member.name}}</h3>
-      <p class="team-title">{{member.title}}</p>
-      <p class="team-bio">{{member.bio}}</p>
-    </div>
-  {% endfor %}
+
   <div class="board-members">
     <h1 class="team-header">Board of Directors</h1>
     {% for member in site.data.board %}
@@ -47,5 +37,17 @@ meta: Our team is comprised of industry first-movers, visionaries and experts, d
       </div>
     {% endfor %}
   </div>
+
+  <h1 class="team-header">Strategic Advisors</h1>
+  {% for member in site.data.advisors %}
+    <div class="team-member">
+      <!--<div class="team-photo">
+        <img class="img-flex" src="" alt="">
+      </div>-->
+      <h3 class="subpage-text-header text-green">{{member.name}}</h3>
+      <p class="team-title">{{member.title}}</p>
+      <p class="team-bio">{{member.bio}}</p>
+    </div>
+  {% endfor %}
 
 </section>
